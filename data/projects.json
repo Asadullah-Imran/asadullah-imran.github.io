@@ -1,28 +1,40 @@
 [
   {
     "title": "E-Commerce Platform (AOOP Project)",
-    "description": "A Java-based e-commerce system demonstrating advanced OOP principles that won the course competition.",
+    "description": "Java-based e-commerce platform demonstrating OOP principles and UI with Swing. Winner of the AOOP Lab course competition.",
     "technologies": ["Java", "OOP", "Swing"],
     "features": [
-      "Product catalog management",
-      "User authentication system",
-      "Shopping cart functionality"
+      "Product catalog and user roles",
+      "Authentication and cart system",
+      "Invoice generation"
     ],
-    "github": "https://github.com/yourusername/ecommerce-aoop",
+    "github": "https://github.com/Asadullah-Imran/Monster-Munchkins",
     "image": "assets/images/projects/a.jpg",
     "isAcademic": true
   },
   {
     "title": "Task Management App (MERN Stack)",
-    "description": "Full-stack application for personal task management with user authentication and real-time updates.",
+    "description": "A full-stack productivity app allowing users to manage tasks in real time with JWT authentication.",
     "technologies": ["React", "Node.js", "Express", "MongoDB"],
     "features": [
-      "JWT authentication",
-      "Drag-and-drop interface",
-      "Progress tracking"
+      "JWT login system",
+      "Real-time drag-and-drop tasks",
+      "Progress visualization"
     ],
-    "github": "https://github.com/yourusername/task-manager",
-    "demo": "https://yourusername.github.io/task-manager",
+    "github": "https://github.com/Asadullah-Imran/task-manager",
+    "demo": "https://asadullah-imran.github.io/task-manager",
     "image": "assets/images/projects/b.jpg"
+  },
+  {
+    "title": "Password Generator (Personal Project)",
+    "description": "A secure password generator app with options for length, symbols, and storage/retrieval.",
+    "technologies": ["JavaScript", "HTML", "CSS"],
+    "features": [
+      "Randomized secure passwords",
+      "Clipboard copy functionality",
+      "Password retrieval feature"
+    ],
+    "github": "https://github.com/Asadullah-Imran/password-generator",
+    "image": "assets/images/projects/c.jpg"
   }
 ]

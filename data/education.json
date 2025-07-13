@@ -5,9 +5,9 @@
     "period": "2021 - 2026 (Expected)",
     "cgpa": "3.95",
     "highlights": [
-      "Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems",
-      "Champion, Advanced OOP Lab Course Project (Spring 2024)",
-      "Position Holder, University Innovation Hub Program"
+      "Relevant Courses: Data Structures, Algorithms, Web Development, Database Systems",
+      "Champion, Advanced OOP Lab Project (Spring 2024)",
+      "Top Performer, University Innovation Hub Program (UIHP)"
     ]
   },
   {
@@ -15,5 +15,11 @@
     "degree": "HSC (Science)",
     "period": "2018 - 2019",
     "gpa": "3.92"
+  },
+  {
+    "institution": "Udayan Secondary High School",
+    "degree": "SSC (Science)",
+    "period": "2016 - 2017",
+    "gpa": "4.68"
   }
 ]

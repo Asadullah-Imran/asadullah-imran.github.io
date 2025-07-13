@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Asadullah Imran</title>
-
+    <title>Project Detail | Asadullah Imran</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,61 +29,25 @@
         },
       };
     </script>
-
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
-
   <body class="font-sans bg-light text-dark antialiased">
     <div id="navbar-include"></div>
-
     <main class="pt-24 pb-12">
-      <!-- Projects Section -->
-      <section class="container mx-auto px-6">
-        <h1
-          class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary"
-        >
-          My Projects
-        </h1>
-
-        <!-- Project Filters -->
-        <div class="flex justify-center mb-8 gap-2">
-          <button
-            class="filter-btn px-4 py-2 rounded-full bg-primary text-white"
-            data-filter="all"
-          >
-            All
-          </button>
-          <button
-            class="filter-btn px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition"
-            data-filter="web"
-          >
-            Web
-          </button>
-          <button
-            class="filter-btn px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition"
-            data-filter="academic"
-          >
-            Academic
-          </button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div
-          id="projects-container"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          <!-- Projects will be loaded dynamically by projects.js -->
+      <section
+        class="container mx-auto px-6 py-12 bg-white rounded-lg shadow-md"
+      >
+        <div id="project-detail-container">
+          <!-- Project details will be loaded here by project-detail.js -->
         </div>
       </section>
     </main>
-
     <!-- Footer -->
     <footer class="bg-dark text-white py-8">
       <div class="container mx-auto px-6 text-center">
@@ -102,9 +65,8 @@
         </div>
       </div>
     </footer>
-
     <!-- Scripts -->
-    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/project-detail.js"></script>
     <script src="assets/js/navbar.js"></script>
   </body>
 </html>
