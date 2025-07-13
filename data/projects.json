@@ -1,0 +1,28 @@
+[
+  {
+    "title": "E-Commerce Platform (AOOP Project)",
+    "description": "A Java-based e-commerce system demonstrating advanced OOP principles that won the course competition.",
+    "technologies": ["Java", "OOP", "Swing"],
+    "features": [
+      "Product catalog management",
+      "User authentication system",
+      "Shopping cart functionality"
+    ],
+    "github": "https://github.com/yourusername/ecommerce-aoop",
+    "image": "assets/images/projects/aoop-project.jpg",
+    "isAcademic": true
+  },
+  {
+    "title": "Task Management App (MERN Stack)",
+    "description": "Full-stack application for personal task management with user authentication and real-time updates.",
+    "technologies": ["React", "Node.js", "Express", "MongoDB"],
+    "features": [
+      "JWT authentication",
+      "Drag-and-drop interface",
+      "Progress tracking"
+    ],
+    "github": "https://github.com/yourusername/task-manager",
+    "demo": "https://yourusername.github.io/task-manager",
+    "image": "assets/images/projects/task-manager.jpg"
+  }
+]

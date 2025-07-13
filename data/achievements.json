@@ -1,0 +1,16 @@
+[
+  {
+    "title": "AOOP Lab Course Champion",
+    "organization": "United International University",
+    "year": "2024",
+    "description": "Awarded for best project in Advanced Object-Oriented Programming course",
+    "image": "assets/images/awards/a.jpg"
+  },
+  {
+    "title": "ICPC Participant",
+    "organization": "International Collegiate Programming Contest",
+    "year": "2024",
+    "description": "Competed in preliminary round of prestigious algorithmic programming competition",
+    "image": "assets/images/awards/a.jpg"
+  }
+]

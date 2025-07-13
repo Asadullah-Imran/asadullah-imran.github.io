@@ -1,0 +1,22 @@
+{
+  "programming": [
+    { "name": "JavaScript", "level": 90 },
+    { "name": "Python", "level": 80 },
+    { "name": "Java", "level": 85 },
+    { "name": "C", "level": 75 }
+  ],
+  "web": [
+    { "name": "HTML/CSS", "level": 95 },
+    { "name": "React", "level": 85 },
+    { "name": "Node.js", "level": 80 },
+    { "name": "Express", "level": 80 }
+  ],
+  "tools": ["Git/GitHub", "VS Code", "Postman", "Figma", "Adobe Photoshop"],
+  "concepts": [
+    "Data Structures",
+    "Algorithms",
+    "OOP",
+    "Agile Methodologies",
+    "Responsive Design"
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Advanced React",
+    "issuer": "Meta via Coursera",
+    "date": "June 2023",
+    "badge": "assets/images/certifications/advanced-react.jpg",
+    "credentials": "Credential ID XYZ123",
+    "url": "https://coursera.org/verify/XYZ123"
+  },
+  {
+    "title": "Programming with JavaScript",
+    "issuer": "Meta via Coursera",
+    "date": "May 2023",
+    "badge": "assets/images/certifications/js-cert.jpg",
+    "url": "https://coursera.org/verify/ABC456"
+  }
+]

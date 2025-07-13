@@ -1,0 +1,32 @@
+{
+  "name": "Asadullah Imran",
+  "title": "MERN Stack Developer | CSE Student",
+  "tagline": "Building digital solutions with JavaScript ecosystems",
+  "location": "Dhaka, Bangladesh",
+  "email": "asadullahimran19@gmail.com",
+  "phone": "+8801633-356249",
+  "about": "Computer Science student at United International University with a 3.95 CGPA. Passionate about building web applications using modern JavaScript technologies. Strong foundation in data structures, algorithms, and software engineering principles.",
+  "image": "assets/images/profile/b.jpg",
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yourusername",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/yourprofile",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "name": "LeetCode",
+      "url": "https://leetcode.com/yourhandle",
+      "icon": "fas fa-code"
+    }
+  ],
+  "languages": [
+    { "name": "Bangla", "level": "Native" },
+    { "name": "English", "level": "Fluent" },
+    { "name": "Hindi", "level": "Conversational" }
+  ]
+}

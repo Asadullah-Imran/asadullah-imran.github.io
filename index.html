@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asadullah Imran | MERN Stack Developer</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4e54c8",
+              "primary-light": "#6a6fd8",
+              "primary-dark": "#3a3f9e",
+              secondary: "#8f94fb",
+              "secondary-dark": "#777df9",
+              accent: "#00b4d8",
+              "accent-dark": "#0093b0",
+              dark: "#1e1e2d",
+              light: "#f8f9fa",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+
+  <body class="font-sans bg-light text-dark antialiased">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#home" class="text-2xl font-bold text-primary">AI</a>
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a href="about.html" class="hover:text-primary transition">About</a>
+          </li>
+          <li>
+            <a href="skills.html" class="hover:text-primary transition"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-primary transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="hover:text-primary transition">Blog</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-primary transition">Contact</a>
+          </li>
+        </ul>
+        <button id="mobile-menu-button" class="md:hidden text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="min-h-screen flex items-center pt-20">
+      <div
+        class="container mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 mb-12 md:mb-0">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 text-primary">
+            Asadullah Imran
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-secondary">
+            MERN Stack Developer | CSE Student
+          </h2>
+          <p class="text-lg mb-8 max-w-lg">
+            Building digital solutions with JavaScript ecosystems.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="projects.html"
+              class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl"
+              >View My Work</a
+            >
+            <a
+              href="docs/Asadullah_Imran_CV.pdf"
+              download
+              class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition"
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div
+            class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-xl"
+          >
+            <img
+              src="assets/images/profile/a.jpg"
+              alt="Asadullah Imran"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-primary mb-6">About Me</h2>
+        <p class="text-lg max-w-3xl mx-auto">
+          Computer Science student at United International University with a
+          3.95 CGPA. Passionate about building web applications using modern
+          JavaScript technologies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-primary mb-12">Skills</h2>
+        <div
+          id="skills-list"
+          class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto"
+        >
+          <!-- Skills will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="portfolio" class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-primary mb-12">Featured Projects</h2>
+        <div
+          id="portfolio-projects"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Projects will be loaded dynamically -->
+        </div>
+        <div class="mt-12">
+          <a
+            href="projects.html"
+            class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition"
+            >See All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-primary text-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+        <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <p class="mb-2">
+              <i class="fas fa-envelope mr-2"></i>
+              <a
+                href="mailto:asadullahimran19@gmail.com"
+                class="hover:underline"
+                >asadullahimran19@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone mr-2"></i>
+              <a href="tel:+8801633356249" class="hover:underline"
+                >+8801633-356249</a
+              >
+            </p>
+            <div id="social-links" class="flex space-x-4 mt-4">
+              <!-- Dynamic social links -->
+            </div>
+          </div>
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full px-4 py-2 rounded bg-primary-light border border-primary-dark text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full px-4 py-2 rounded bg-primary-light border border-primary-dark text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent"
+            />
+            <textarea
+              rows="4"
+              placeholder="Message"
+              class="w-full px-4 py-2 rounded bg-primary-light border border-primary-dark text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition w-full"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 text-center">
+      <p>&copy; 2024 Asadullah Imran. All rights reserved.</p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="#" class="hover:text-primary transition"
+          ><i class="fab fa-github text-xl"></i
+        ></a>
+        <a href="#" class="hover:text-primary transition"
+          ><i class="fab fa-linkedin text-xl"></i
+        ></a>
+        <a href="#" class="hover:text-primary transition"
+          ><i class="fab fa-leetcode text-xl"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
