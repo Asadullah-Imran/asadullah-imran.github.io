@@ -10,6 +10,7 @@
     ],
     "github": "https://github.com/Asadullah-Imran/Monster-Munchkins",
     "image": "assets/images/projects/a.jpg",
+    "alt": "Screenshot of Java-based e-commerce platform project",
     "isAcademic": true
   },
   {
@@ -23,7 +24,8 @@
     ],
     "github": "https://github.com/Asadullah-Imran/task-manager",
     "demo": "https://asadullah-imran.github.io/task-manager",
-    "image": "assets/images/projects/b.jpg"
+    "image": "assets/images/projects/b.jpg",
+    "alt": "Screenshot of MERN stack task management app project"
   },
   {
     "title": "Password Generator (Personal Project)",
@@ -35,6 +37,7 @@
       "Password retrieval feature"
     ],
     "github": "https://github.com/Asadullah-Imran/password-generator",
-    "image": "assets/images/projects/c.jpg"
+    "image": "assets/images/projects/c.jpg",
+    "alt": "Screenshot of password generator app project"
   }
 ]

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     <div class="max-w-2xl mx-auto">
       <div class="mb-8">
         <img src="${project.image}" alt="${
-    project.title
+    project.alt || project.title
   }" class="w-full h-64 object-cover rounded-lg shadow" />
       </div>
       <h1 class="text-3xl font-bold text-primary mb-4">${project.title}</h1>

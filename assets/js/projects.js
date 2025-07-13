@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         <div class="relative h-48 overflow-hidden">
           <a href="project-detail.html?id=${projectsData.indexOf(project)}">
             <img src="${project.image}" alt="${
-          project.title
+          project.alt || project.title
         }" class="w-full h-full object-cover">
           </a>
           <div class="absolute inset-0 bg-black/30 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition">

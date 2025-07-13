@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
         <div class="h-48 overflow-hidden">
           <img src="${post.image}" alt="${
-        post.title
+        post.alt || post.title
       }" class="w-full h-full object-cover" />
         </div>
         <div class="p-6 flex-1 flex flex-col">

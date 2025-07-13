@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     <div class="max-w-2xl mx-auto">
       <div class="mb-8">
         <img src="${post.image}" alt="${
-    post.title
+    post.alt || post.title
   }" class="w-full h-64 object-cover rounded-lg shadow" />
       </div>
       <div class="mb-4 flex items-center justify-between">

@@ -93,7 +93,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         <div class="mb-6 last:mb-0 flex items-start gap-4">
           ${
             aff.image
-              ? `<img src="${aff.image}" alt="${aff.organization}" class="w-12 h-12 object-cover rounded-full">`
+              ? `<img src="${aff.image}" alt="${
+                  aff.alt || aff.organization
+                }" class="w-12 h-12 object-cover rounded-full">`
               : `<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <i class="fas fa-users text-primary"></i>
                 </div>`

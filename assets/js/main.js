@@ -102,7 +102,7 @@ function populateProjects(data) {
       <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300">
         <div class="relative h-48 overflow-hidden">
           <img src="${project.image}" alt="${
-          project.title
+          project.alt || project.title
         }" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-black/30 flex items-center justify-center space-x-4 opacity-0 hover:opacity-100 transition">
             ${
@@ -172,7 +172,9 @@ function populateCertifications(data) {
       .map(
         (cert) => `
       <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-        <img src="${cert.badge}" alt="${cert.title}" class="w-24 h-24 mb-4">
+        <img src="${cert.badge}" alt="${
+          cert.alt || cert.title
+        }" class="w-24 h-24 mb-4">
         <h4 class="font-bold text-lg mb-1">${cert.title}</h4>
         <p class="text-gray-600 mb-2">${cert.issuer}</p>
         <p class="text-sm text-gray-500 mb-4">Issued: ${cert.date}</p>
@@ -199,7 +201,7 @@ function populateBlogPreview(posts) {
         (post) => `
       <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
         <img src="${post.image}" alt="${
-          post.title
+          post.alt || post.title
         }" class="w-full h-48 object-cover">
         <div class="p-6">
           <div class="flex justify-between text-sm text-gray-500 mb-2">
