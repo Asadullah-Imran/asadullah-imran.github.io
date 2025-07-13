@@ -99,7 +99,7 @@ function populateProjects(data) {
       .slice(0, 3)
       .map(
         (project) => `
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300">
         <div class="relative h-48 overflow-hidden">
           <img src="${project.image}" alt="${
           project.title
@@ -144,6 +144,25 @@ function populateProjects(data) {
       .join("");
   }
 }
+
+// Add button hover animation globally
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    document.querySelectorAll("a, button").forEach((el) => {
+      if (
+        el.classList.contains("bg-primary") ||
+        el.classList.contains("bg-accent") ||
+        el.classList.contains("border-primary")
+      ) {
+        el.classList.add(
+          "transition-transform",
+          "duration-200",
+          "hover:scale-105"
+        );
+      }
+    });
+  }, 500);
+});
 
 // Populate certifications with Tailwind classes
 function populateCertifications(data) {

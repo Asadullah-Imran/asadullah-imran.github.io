@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   blogList.innerHTML = blogData.posts
     .map(
       (post) => `
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
         <div class="h-48 overflow-hidden">
           <img src="${post.image}" alt="${
         post.title
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           </div>
           <a href="blog-detail.html?id=${
             post.id
-          }" class="mt-auto inline-block text-accent hover:underline font-medium">Read More <i class="fas fa-arrow-right"></i></a>
+          }" class="mt-auto inline-block text-accent hover:underline font-medium transition-transform duration-200 hover:scale-105">Read More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     `
