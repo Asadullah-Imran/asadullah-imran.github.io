@@ -41,7 +41,8 @@
     <div id="navbar-include"></div>
     <main class="pt-24 pb-12">
       <section
-        class="container mx-auto px-6 py-12 bg-white rounded-lg shadow-md"
+        id="blog-detail-animate"
+        class="container mx-auto px-6 py-12 bg-white rounded-lg shadow-md opacity-0 translate-y-8 transition-all duration-1000"
       >
         <div id="blog-detail-container">
           <!-- Blog post details will be loaded here by blog-detail.js -->
@@ -68,5 +69,17 @@
     <!-- Scripts -->
     <script src="assets/js/blog-detail.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script>
+      // Blog detail fade-in animation
+      window.addEventListener("DOMContentLoaded", () => {
+        const blogDetail = document.getElementById("blog-detail-animate");
+        if (blogDetail) {
+          setTimeout(() => {
+            blogDetail.classList.remove("opacity-0", "translate-y-8");
+            blogDetail.classList.add("opacity-100", "translate-y-0");
+          }, 100);
+        }
+      });
+    </script>
   </body>
 </html>

@@ -46,7 +46,10 @@
 
     <main class="pt-24 pb-12">
       <!-- Skills Section -->
-      <section class="container mx-auto px-6">
+      <section
+        id="skills-animate"
+        class="container mx-auto px-6 opacity-0 translate-y-8 transition-all duration-1000"
+      >
         <h1
           class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary"
         >
@@ -133,5 +136,17 @@
     <!-- Scripts -->
     <script src="assets/js/skills.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script>
+      // Skills fade-in animation
+      window.addEventListener("DOMContentLoaded", () => {
+        const skills = document.getElementById("skills-animate");
+        if (skills) {
+          setTimeout(() => {
+            skills.classList.remove("opacity-0", "translate-y-8");
+            skills.classList.add("opacity-100", "translate-y-0");
+          }, 100);
+        }
+      });
+    </script>
   </body>
 </html>
