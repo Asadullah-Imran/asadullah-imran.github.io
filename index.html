@@ -42,38 +42,7 @@
   </head>
 
   <body class="font-sans bg-light text-dark antialiased">
-    <!-- Navbar -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#home" class="text-2xl font-bold text-primary">AI</a>
-        <ul class="hidden md:flex space-x-8">
-          <li>
-            <a href="about.html" class="hover:text-primary transition">About</a>
-          </li>
-          <li>
-            <a href="skills.html" class="hover:text-primary transition"
-              >Skills</a
-            >
-          </li>
-          <li>
-            <a href="projects.html" class="hover:text-primary transition"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a href="blog.html" class="hover:text-primary transition">Blog</a>
-          </li>
-          <li>
-            <a href="#contact" class="hover:text-primary transition">Contact</a>
-          </li>
-        </ul>
-        <button id="mobile-menu-button" class="md:hidden text-primary">
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-      </div>
-    </nav>
+    <div id="navbar-include"></div>
 
     <!-- Hero Section -->
     <header id="home" class="min-h-screen flex items-center pt-20">
@@ -109,7 +78,7 @@
             class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-xl"
           >
             <img
-              src="assets/images/profile/a.jpg"
+              src="assets/images/profile/b.jpg"
               alt="Asadullah Imran"
               class="w-full h-full object-cover"
             />
@@ -232,5 +201,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

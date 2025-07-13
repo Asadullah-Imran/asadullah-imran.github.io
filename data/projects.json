@@ -9,7 +9,7 @@
       "Shopping cart functionality"
     ],
     "github": "https://github.com/yourusername/ecommerce-aoop",
-    "image": "assets/images/projects/aoop-project.jpg",
+    "image": "assets/images/projects/a.jpg",
     "isAcademic": true
   },
   {
@@ -23,6 +23,6 @@
     ],
     "github": "https://github.com/yourusername/task-manager",
     "demo": "https://yourusername.github.io/task-manager",
-    "image": "assets/images/projects/task-manager.jpg"
+    "image": "assets/images/projects/b.jpg"
   }
 ]
