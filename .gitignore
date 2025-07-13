@@ -1,1 +1,21 @@
-/.DS_Store
+# macOS system files
+.DS_Store
+
+# Node modules (if ever used)
+node_modules/
+
+# Log files
+*.log
+
+# Build output (if any)
+dist/
+build/
+
+# VSCode settings
+.vscode/
+
+# OS generated files
+Thumbs.db
+
+# Ignore personal data or credentials (if any)
+.env
