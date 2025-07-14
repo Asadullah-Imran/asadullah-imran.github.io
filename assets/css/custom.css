@@ -62,3 +62,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary-dark);
 }
+
+#mobile-menu {
+  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-top: 6rem; /* matches pt-24 */
+}
