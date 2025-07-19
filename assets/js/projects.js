@@ -31,19 +31,22 @@ document.addEventListener("DOMContentLoaded", async function () {
       .slice(0, count)
       .map(
         (project, idx) => `
-      <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col min-h-[500px]" 
+      <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300 flex flex-col min-h-[500px]" 
            data-category="${project.isAcademic ? "academic" : "web"}">
-        <div class="relative h-48 overflow-hidden">
+        <div class="relative h-48 overflow-hidden group">
           <a href="project-detail.html?id=${projectsData.indexOf(project)}">
-            <img src="${project.image}" alt="${
-          project.alt || project.title
-        }" class="w-full h-full object-cover">
+            <img src="${project.featuredImage.src}" alt="${
+          project.featuredImage.alt || project.title
+        }" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
           </a>
-          <div class="absolute inset-0 bg-black/30 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-4">
+            <h3 class="text-white text-xl font-bold">${project.title}</h3>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
             ${
               project.github
                 ? `
-              <a href="${project.github}" target="_blank" class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-dark transition">
+              <a href="${project.github}" target="_blank" class="bg-white/90 text-primary rounded-full w-10 h-10 flex items-center justify-center hover:bg-white transition transform hover:scale-110">
                 <i class="fab fa-github"></i>
               </a>
             `
@@ -52,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             ${
               project.demo
                 ? `
-              <a href="${project.demo}" target="_blank" class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-dark transition">
+              <a href="${project.demo}" target="_blank" class="bg-white/90 text-primary rounded-full w-10 h-10 flex items-center justify-center hover:bg-white transition transform hover:scale-110">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             `
@@ -61,28 +64,37 @@ document.addEventListener("DOMContentLoaded", async function () {
           </div>
         </div>
         <div class="flex-1 flex flex-col p-6">
-          <h3 class="text-xl font-bold mb-2">
-            <a href="project-detail.html?id=${projectsData.indexOf(
-              project
-            )}" class="hover:text-primary transition">${project.title}</a>
-          </h3>
-          <p class="text-gray-600 mb-4">${project.description}</p>
+          <p class="text-sm text-primary font-medium mb-2">${
+            project.category
+          }</p>
+          <p class="text-gray-600 mb-4">${
+            project.tagline || project.description.substring(0, 100) + "..."
+          }</p>
           <div class="flex flex-wrap gap-2 mb-4">
             ${project.technologies
+              .slice(0, 5)
               .map(
                 (tech) => `
               <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">${tech}</span>
             `
               )
               .join("")}
+            ${
+              project.technologies.length > 5
+                ? `<span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">+${
+                    project.technologies.length - 5
+                  }</span>`
+                : ""
+            }
           </div>
           ${
             project.features
               ? `
-            <div class="border-t pt-4 mb-4">
+            <div class="mt-auto border-t pt-4 mb-4">
               <h4 class="font-semibold text-primary mb-2">Key Features:</h4>
               <ul class="space-y-1 text-sm text-gray-600">
                 ${project.features
+                  .slice(0, 3)
                   .map(
                     (feature) => `
                   <li class="flex items-start">
@@ -98,9 +110,11 @@ document.addEventListener("DOMContentLoaded", async function () {
               : ""
           }
         </div>
-        <a href="project-detail.html?id=${projectsData.indexOf(
-          project
-        )}" class="inline-block bg-accent text-white px-4 py-2 rounded-lg font-medium transition hover:bg-accent-dark hover:scale-105 m-6 mt-0">View Details <i class="fas fa-arrow-right"></i></a>
+        <div class="px-6 pb-6 pt-0">
+          <a href="project-detail.html?id=${projectsData.indexOf(
+            project
+          )}" class="inline-block w-full text-center bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-lg font-medium transition hover:opacity-90 hover:shadow-lg">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
       </div>
     `
       )

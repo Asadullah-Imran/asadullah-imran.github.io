@@ -69,24 +69,47 @@ function populatePersonalInfo(data) {
 
 // Populate skills section with Tailwind classes
 function populateSkills(data) {
-  const skillsList = document.getElementById("skills-list");
-  if (skillsList) {
-    // Combine top skills from different categories
-    const topSkills = [
-      ...(data.programming || []).slice(0, 2),
-      ...(data.web || []).slice(0, 2),
-      ...(data.tools || []).slice(0, 2),
+  const skillsCards = document.getElementById("skills-cards");
+  if (skillsCards) {
+    const categories = [
+      {
+        key: "programming",
+        title: "Programming",
+        icon: "fas fa-code",
+      },
+      {
+        key: "web",
+        title: "Web",
+        icon: "fas fa-globe",
+      },
+      {
+        key: "tools",
+        title: "Tools & Software",
+        icon: "fas fa-tools",
+      },
     ];
-
-    skillsList.innerHTML = topSkills
-      .map(
-        (skill) => `
-      <div class="bg-white shadow-md rounded-lg px-6 py-4 flex items-center space-x-2">
-        <i class="fas fa-check text-primary"></i>
-        <span>${typeof skill === "string" ? skill : skill.name}</span>
-      </div>
-    `
-      )
+    skillsCards.innerHTML = categories
+      .map((cat) => {
+        const skills = data[cat.key] || [];
+        return `
+          <div class="bg-white p-6 rounded-xl shadow-md text-center">
+            <div class="flex justify-center mb-4">
+              <i class="${cat.icon} text-primary text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">${cat.title}</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+              ${skills
+                .map(
+                  (skill) =>
+                    `<span class="bg-gray-100 text-gray-800 px-4 py-1 rounded-full font-medium">${
+                      typeof skill === "string" ? skill : skill.name
+                    }</span>`
+                )
+                .join("")}
+            </div>
+          </div>
+        `;
+      })
       .join("");
   }
 }
@@ -99,43 +122,40 @@ function populateProjects(data) {
       .slice(0, 3)
       .map(
         (project) => `
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+      <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
         <div class="relative h-48 overflow-hidden">
-          <img src="${project.image}" alt="${
-          project.alt || project.title
-        }" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-black/30 flex items-center justify-center space-x-4 opacity-0 hover:opacity-100 transition">
-            ${
-              project.github
-                ? `
-              <a href="${project.github}" target="_blank" class="text-white bg-primary rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-dark transition">
-                <i class="fab fa-github"></i>
-              </a>
-            `
-                : ""
-            }
-            ${
-              project.demo
-                ? `
-              <a href="${project.demo}" target="_blank" class="text-white bg-primary rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary-dark transition">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            `
-                : ""
-            }
+          <img src="${project.featuredImage?.src || ""}" alt="${
+          project.featuredImage?.alt || project.title
+        }" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 flex items-end p-4">
+            <h3 class="text-white text-xl font-bold">${project.title}</h3>
           </div>
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">${project.title}</h3>
-          <p class="text-gray-600 mb-4">${project.description}</p>
-          <div class="flex flex-wrap gap-2">
-            ${project.technologies
+          <p class="text-sm text-primary font-medium mb-2">${
+            project.category || ""
+          }</p>
+          <p class="text-gray-600 mb-4">${
+            project.tagline || project.description
+          }</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            ${(project.technologies || [])
               .map(
                 (tech) => `
               <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">${tech}</span>
             `
               )
               .join("")}
+          </div>
+          <div class="flex justify-between">
+            <a href="project-detail.html?id=${data.indexOf(
+              project
+            )}" class="text-primary hover:underline font-medium">View Details</a>
+            ${
+              project.github
+                ? `<a href="${project.github}" target="_blank" class="text-gray-500 hover:text-primary"><i class="fab fa-github"></i></a>`
+                : ""
+            }
           </div>
         </div>
       </div>

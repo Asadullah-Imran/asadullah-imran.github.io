@@ -9,7 +9,87 @@
   --color-dark: #1e1e2d;
   --color-light: #f8f9fa;
 }
+/* Project Card Hover Effect */
+.project-card {
+  transition: all 0.3s ease;
+}
 
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Swiper Custom Styles */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4e54c8;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ddd;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4e54c8;
+}
+
+/* Gradient Text for Headings */
+.gradient-text {
+  background: linear-gradient(45deg, #4e54c8, #8f94fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Prose Styles */
+.prose {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.prose strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .swiper-slide img {
+    height: 300px;
+  }
+}
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -32,6 +112,7 @@
 
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-out forwards;
+  animation-play-state: paused;
 }
 
 /* Responsive adjustments */
@@ -68,4 +149,90 @@
   min-height: 100vh;
   overflow-y: auto;
   padding-top: 6rem; /* matches pt-24 */
+}
+
+/* Swiper custom styles */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 1rem;
+  text-align: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4e54c8;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+/* Swiper custom styles for screenshot section only */
+.bg-white.shadow-md .swiper-container {
+  position: relative;
+}
+.bg-white.shadow-md .swiper-button-next,
+.bg-white.shadow-md .swiper-button-prev {
+  color: #4e54c8;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 10;
+  position: absolute;
+}
+.bg-white.shadow-md .swiper-button-prev {
+  left: 0.5rem;
+}
+.bg-white.shadow-md .swiper-button-next {
+  right: 0.5rem;
+}
+.bg-white.shadow-md .swiper-button-next:hover,
+.bg-white.shadow-md .swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.achievement-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(78, 84, 200, 0.15);
+}
+.cert-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(78, 84, 200, 0.15);
 }

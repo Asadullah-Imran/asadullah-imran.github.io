@@ -1,43 +1,63 @@
 [
   {
-    "title": "E-Commerce Platform (AOOP Project)",
-    "description": "Java-based e-commerce platform demonstrating OOP principles and UI with Swing. Winner of the AOOP Lab course competition.",
-    "technologies": ["Java", "OOP", "Swing"],
-    "features": [
-      "Product catalog and user roles",
-      "Authentication and cart system",
-      "Invoice generation"
+    "title": "CineMatch - Intelligent Movie Recommendation System",
+
+    "tagline": "Hybrid KNN-powered movie recommendations using FastAPI and TF-IDF",
+    "description": "A full-stack AI-powered movie recommendation system that uses a manual KNN implementation with hybrid filtering. Built to deepen my understanding of recommendation engines during my AI course.",
+    "technologies": [
+      "FastAPI",
+      "Python",
+      "NumPy",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "TMDB API"
     ],
-    "github": "https://github.com/Asadullah-Imran/Monster-Munchkins",
-    "image": "assets/images/projects/a.jpg",
-    "alt": "Screenshot of Java-based e-commerce platform project",
-    "isAcademic": true
-  },
-  {
-    "title": "Task Management App (MERN Stack)",
-    "description": "A full-stack productivity app allowing users to manage tasks in real time with JWT authentication.",
-    "technologies": ["React", "Node.js", "Express", "MongoDB"],
-    "features": [
-      "JWT login system",
-      "Real-time drag-and-drop tasks",
-      "Progress visualization"
+    "purpose": "I built CineMatch to better understand how recommendation systems work by implementing KNN from scratch and exploring content-based and collaborative filtering.",
+    "learnings": [
+      "Manual implementation of KNN algorithm",
+      "Using TF-IDF for content-based similarity",
+      "Balancing content and collaborative features in hybrid recommendations",
+      "Building REST APIs with FastAPI"
     ],
-    "github": "https://github.com/Asadullah-Imran/task-manager",
-    "demo": "https://asadullah-imran.github.io/task-manager",
-    "image": "assets/images/projects/b.jpg",
-    "alt": "Screenshot of MERN stack task management app project"
-  },
-  {
-    "title": "Password Generator (Personal Project)",
-    "description": "A secure password generator app with options for length, symbols, and storage/retrieval.",
-    "technologies": ["JavaScript", "HTML", "CSS"],
-    "features": [
-      "Randomized secure passwords",
-      "Clipboard copy functionality",
-      "Password retrieval feature"
+    "challenges": [
+      "Optimizing distance calculations for large datasets",
+      "Caching API responses to handle TMDB rate limits",
+      "Designing a responsive and clean UI for movie discovery"
     ],
-    "github": "https://github.com/Asadullah-Imran/password-generator",
-    "image": "assets/images/projects/c.jpg",
-    "alt": "Screenshot of password generator app project"
+    "impact": "Strengthened my understanding of AI concepts and how to turn them into real-world, user-facing applications.",
+    "features": [
+      "Hybrid recommendation engine",
+      "Movie search with autocomplete",
+      "Detailed movie info modals",
+      "Trending and genre-based browsing"
+    ],
+    "github": "https://github.com/Asadullah-Imran/Movie_recomendation_applying_KNN",
+    "demo": "https://asadullah-imran.github.io/Movie_recomendation_applying_KNN",
+    "featuredImage": {
+      "src": "assets/images/projects/cinematch/ss_recomendation.png",
+      "alt": "Featured screenshot of CineMatch movie recommendation project"
+    },
+    "screenshots": [
+      {
+        "src": "assets/images/projects/cinematch/ss_home.png",
+        "caption": "CineMatch home page with trending and recommended movies"
+      },
+      {
+        "src": "assets/images/projects/cinematch/ss_genre.png",
+        "caption": "Genre browsing with dynamically loaded movie lists"
+      },
+      {
+        "src": "assets/images/projects/cinematch/ss_movie_details.png",
+        "caption": "Detailed movie information with cast and trailer"
+      },
+      {
+        "src": "assets/images/projects/cinematch/ss_recomendation.png",
+        "caption": "Recommended movies based on hybrid KNN model"
+      }
+    ],
+    "category": "AI & Machine Learning",
+    "isAcademic": true,
+    "date": "2025-07-15"
   }
 ]

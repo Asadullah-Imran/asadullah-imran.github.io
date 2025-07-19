@@ -99,20 +99,17 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark text-white py-8 text-center">
-      <p>&copy; 2024 Asadullah Imran. All rights reserved.</p>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a href="#" class="hover:text-primary transition"
-          ><i class="fab fa-github text-xl"></i
-        ></a>
-        <a href="#" class="hover:text-primary transition"
-          ><i class="fab fa-linkedin text-xl"></i
-        ></a>
-        <a href="#" class="hover:text-primary transition"
-          ><i class="fab fa-leetcode text-xl"></i
-        ></a>
-      </div>
-    </footer>
+    <div id="footer-include"></div>
+    <script>
+      // Footer include
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("assets/components/footer.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("footer-include").innerHTML = data;
+          });
+      });
+    </script>
     <script src="assets/js/navbar.js"></script>
     <script>
       // Navbar include logic (if not already handled globally)

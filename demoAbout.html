@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Asadullah Imran</title>
+    <meta
+      name="description"
+      content="Learn more about Asadullah Imran, a full-stack developer from Dhaka specializing in the MERN stack. Explore his background, education, and affiliations."
+    />
+    <meta
+      name="keywords"
+      content="MERN stack developer, Full-stack JavaScript developer, React developer portfolio, Node.js MongoDB developer, Data science enthusiast, Machine learning beginner projects, AI developer portfolio, Python for machine learning, Business analyst student projects, UIU CSE student portfolio, Asadullah Imran developer, Bangladesh tech student portfolio, Full-stack + data science portfolio, Developer with AI and ML interests, Student projects in web and AI"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="About | Asadullah Imran" />
+    <meta
+      property="og:description"
+      content="Learn more about Asadullah Imran, a full-stack developer from Dhaka specializing in the MERN stack. Explore his background, education, and affiliations."
+    />
+    <meta
+      property="og:image"
+      content="https://asadullahimran.dev/assets/images/profile/b.jpg"
+    />
+    <meta property="og:url" content="https://asadullahimran.dev/about.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AsadullahImran6" />
+    <meta name="twitter:title" content="About | Asadullah Imran" />
+    <meta
+      name="twitter:description"
+      content="Learn more about Asadullah Imran, a full-stack developer from Dhaka specializing in the MERN stack. Explore his background, education, and affiliations."
+    />
+    <meta
+      name="twitter:image"
+      content="https://asadullahimran.dev/assets/images/profile/b.jpg"
+    />
+    <meta name="author" content="Asadullah Imran" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4e54c8",
+              "primary-light": "#6a6fd8",
+              "primary-dark": "#3a3f9e",
+              secondary: "#8f94fb",
+              "secondary-dark": "#777df9",
+              "secondary-light": "#a7abfc",
+              accent: "#00b4d8",
+              "accent-dark": "#0093b0",
+              "accent-light": "#00d9ff",
+              dark: "#1e1e2d",
+              light: "#f8f9fa",
+              white: "#ffffff",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+            animation: {
+              fadeIn: "fadeIn 0.6s ease-out forwards",
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: 0, transform: "translateY(20px)" },
+                "100%": { opacity: 1, transform: "translateY(0)" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #f8f9fa 0%, #eef2f6 100%);
+        font-family: "Inter", sans-serif;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #4e54c8, #8f94fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .pattern {
+        background-image: radial-gradient(#4e54c833 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #3a3f9e, #777df9);
+      }
+      /* Hero Section Styles */
+      .hero-container {
+        background: linear-gradient(135deg, #f8f9fa 0%, #eef2f6 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-container::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(#4e54c833 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.3;
+        z-index: 0;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 10;
+      }
+      .profile-frame {
+        position: relative;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+      }
+      .profile-frame::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        border-radius: 50%;
+        z-index: -1;
+        animation: pulse 4s infinite;
+      }
+      .profile-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .name-gradient {
+        background: linear-gradient(45deg, #4e54c8, #8f94fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+      .title-highlight {
+        position: relative;
+        display: inline-block;
+      }
+      .title-highlight::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        background: rgba(78, 84, 200, 0.2);
+        z-index: -1;
+        border-radius: 4px;
+      }
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        color: #4e54c8;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .social-icon:hover {
+        transform: translateY(-3px);
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        color: white;
+        box-shadow: 0 6px 12px rgba(78, 84, 200, 0.3);
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+      .contact-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(78, 84, 200, 0.15);
+      }
+      .contact-icon {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(78, 84, 200, 0.1);
+        color: #4e54c8;
+        margin-right: 12px;
+      }
+      .section-title {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+      .section-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        height: 4px;
+        background: linear-gradient(90deg, #4e54c8, #8f94fb);
+        border-radius: 2px;
+      }
+      .skill-badge {
+        display: inline-block;
+        padding: 6px 15px;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        margin: 5px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+      .skill-badge:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(78, 84, 200, 0.15);
+      }
+      .timeline-item {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 3rem;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #4e54c8;
+        z-index: 2;
+      }
+      .timeline-item::after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 1.5rem;
+        bottom: -1.5rem;
+        width: 2px;
+        background: #c7d2fe;
+      }
+      .timeline-item:last-child::after {
+        display: none;
+      }
+      .achievement-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      .achievement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(78, 84, 200, 0.15);
+      }
+      .cert-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        transition: all 0.3s ease;
+      }
+      .cert-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(78, 84, 200, 0.15);
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.6;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+      }
+      @media (max-width: 768px) {
+        .profile-frame {
+          width: 220px;
+          height: 220px;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans text-dark antialiased">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm py-4">
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold gradient-text">Asadullah Imran</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-600 hover:text-primary transition"
+            >Home</a
+          >
+          <a href="#about" class="text-primary font-medium">About</a>
+          <a href="#" class="text-gray-600 hover:text-primary transition"
+            >Projects</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition"
+            >Contact</a
+          >
+        </div>
+        <button class="md:hidden text-gray-600">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-container pt-32 pb-16">
+      <div class="container mx-auto px-6 py-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+            <!-- Profile Image -->
+            <div class="flex justify-center lg:justify-start animate-float">
+              <div class="profile-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                  alt="Asadullah Imran"
+                  class="profile-img"
+                />
+              </div>
+            </div>
+
+            <!-- Profile Content -->
+            <div class="lg:col-span-2 hero-content">
+              <div class="text-center lg:text-left">
+                <!-- Name with Gradient Effect -->
+                <h1 class="text-4xl md:text-5xl font-bold mb-3">
+                  <span class="name-gradient">Asadullah Imran</span>
+                </h1>
+
+                <!-- Title with Highlight Effect -->
+                <h2
+                  class="text-2xl md:text-3xl font-semibold text-gray-700 mb-5"
+                >
+                  <span class="title-highlight"
+                    >MERN Stack Developer | CSE Student</span
+                  >
+                </h2>
+
+                <!-- Tagline -->
+                <p class="text-xl text-gray-600 mb-6 max-w-2xl">
+                  Building scalable digital solutions with JavaScript ecosystems
+                </p>
+
+                <!-- About Summary -->
+                <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+                  <p class="text-gray-700 leading-relaxed">
+                    Final-year Computer Science student at United International
+                    University (CGPA 3.95). Passionate MERN Stack developer with
+                    strong problem-solving skills. Experienced in building
+                    modern full-stack applications and participating in
+                    competitive programming contests. Proficient in JavaScript,
+                    React, Node.js, and software design principles.
+                  </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                      <p class="text-gray-600 text-sm">Location</p>
+                      <p class="font-medium">Dhaka, Bangladesh</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <p class="text-gray-600 text-sm">Email</p>
+                      <p class="font-medium">asadullahimran19@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <p class="text-gray-600 text-sm">Phone</p>
+                      <p class="font-medium">+8801633-356249</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                      <p class="text-gray-600 text-sm">Education</p>
+                      <p class="font-medium">BSc in CSE (Expected 2026)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex justify-center lg:justify-start space-x-4">
+                  <a
+                    href="https://github.com/Asadullah-Imran"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-github text-xl"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/asadullah-imran/"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                  </a>
+                  <a
+                    href="https://leetcode.com/u/asadullahimran19/"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fas fa-code text-xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-primary mb-12 text-center section-title"
+          >
+            Technical Skills
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                Frontend Development
+              </h3>
+              <div class="flex flex-wrap">
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">TypeScript</span>
+                <span class="skill-badge">HTML5 & CSS3</span>
+                <span class="skill-badge">Tailwind CSS</span>
+                <span class="skill-badge">Redux</span>
+                <span class="skill-badge">Next.js</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                Backend & Databases
+              </h3>
+              <div class="flex flex-wrap">
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Express.js</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">RESTful APIs</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">Firebase</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                Tools & Methodologies
+              </h3>
+              <div class="flex flex-wrap">
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">Jest</span>
+                <span class="skill-badge">Agile Development</span>
+                <span class="skill-badge">CI/CD</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                Data Science & AI
+              </h3>
+              <div class="flex flex-wrap">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Pandas</span>
+                <span class="skill-badge">NumPy</span>
+                <span class="skill-badge">Scikit-learn</span>
+                <span class="skill-badge">TensorFlow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 bg-white" id="education">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-primary mb-12 text-center section-title"
+          >
+            Education
+          </h2>
+
+          <div class="timeline">
+            <div class="timeline-item animate-fadeIn">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-primary">
+                  BSc in Computer Science and Engineering
+                </h3>
+                <p class="text-gray-600">
+                  United International University | 2021 - 2026 (Expected)
+                </p>
+                <div class="mt-4">
+                  <p class="text-gray-700">
+                    <span class="font-medium">CGPA:</span> 3.95
+                  </p>
+                  <div class="mt-3">
+                    <h4 class="font-medium text-gray-800">Highlights:</h4>
+                    <ul class="mt-2 space-y-2">
+                      <li class="flex items-start">
+                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                        <span
+                          >Relevant Courses: Data Structures, Algorithms, Web
+                          Development, Database Systems</span
+                        >
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                        <span
+                          >Champion, Advanced OOP Lab Project (Spring
+                          2024)</span
+                        >
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                        <span
+                          >Top Performer, University Innovation Hub Program
+                          (UIHP)</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item animate-fadeIn">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-primary">HSC (Science)</h3>
+                <p class="text-gray-600">Barishal Govt College | 2018 - 2019</p>
+                <div class="mt-4">
+                  <p class="text-gray-700">
+                    <span class="font-medium">GPA:</span> 3.92
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item animate-fadeIn">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-primary">SSC (Science)</h3>
+                <p class="text-gray-600">
+                  Udayan Secondary High School | 2016 - 2017
+                </p>
+                <div class="mt-4">
+                  <p class="text-gray-700">
+                    <span class="font-medium">GPA:</span> 4.68
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-primary mb-12 text-center section-title"
+          >
+            Achievements
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="achievement-card">
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                  alt="AOOP Lab Course Champion"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary">
+                  AOOP Lab Course Champion
+                </h3>
+                <p class="text-gray-600">
+                  United International University | 2024
+                </p>
+                <p class="text-gray-700 mt-3">
+                  Awarded for best project in Advanced Object-Oriented
+                  Programming course using Java and Swing.
+                </p>
+              </div>
+            </div>
+
+            <div class="achievement-card">
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                  alt="UIHP Position Holder"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary">
+                  UIHP Position Holder
+                </h3>
+                <p class="text-gray-600">
+                  University Innovation Hub Program | 2024
+                </p>
+                <p class="text-gray-700 mt-3">
+                  Recognized for innovation and teamwork as part of the
+                  'In|turn' team during UIU's innovation challenge.
+                </p>
+              </div>
+            </div>
+
+            <div class="achievement-card">
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                  alt="ICPC Participant"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary">ICPC Participant</h3>
+                <p class="text-gray-600">
+                  International Collegiate Programming Contest | 2024
+                </p>
+                <p class="text-gray-700 mt-3">
+                  Participated in the ICPC preliminary round, applying
+                  problem-solving and algorithmic skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-primary mb-12 text-center section-title"
+          >
+            Certifications
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="cert-card">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary"
+                >
+                  <i class="fab fa-react text-3xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Advanced React</h3>
+                  <p class="text-gray-600">Meta via Coursera | June 2023</p>
+                  <p class="text-sm text-gray-500 mt-1">Credential ID XYZ123</p>
+                  <a
+                    href="https://coursera.org/verify/XYZ123"
+                    target="_blank"
+                    class="inline-block mt-3 text-primary font-medium hover:underline"
+                  >
+                    View Credential
+                    <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary"
+                >
+                  <i class="fab fa-js text-3xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Programming with JavaScript</h3>
+                  <p class="text-gray-600">Meta via Coursera | May 2023</p>
+                  <a
+                    href="https://coursera.org/verify/ABC456"
+                    target="_blank"
+                    class="inline-block mt-3 text-primary font-medium hover:underline"
+                  >
+                    View Credential
+                    <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary"
+                >
+                  <i class="fab fa-react text-3xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">React Basics</h3>
+                  <p class="text-gray-600">Meta via Coursera | May 2023</p>
+                  <a
+                    href="https://coursera.org/verify/DEF789"
+                    target="_blank"
+                    class="inline-block mt-3 text-primary font-medium hover:underline"
+                  >
+                    View Credential
+                    <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary"
+                >
+                  <i class="fab fa-git-alt text-3xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Version Control</h3>
+                  <p class="text-gray-600">Meta via Coursera | April 2023</p>
+                  <a
+                    href="https://coursera.org/verify/GHI101"
+                    target="_blank"
+                    class="inline-block mt-3 text-primary font-medium hover:underline"
+                  >
+                    View Credential
+                    <i class="fas fa-external-link-alt ml-1 text-sm"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages & Affiliations -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-primary mb-6 section-title">
+              Languages
+            </h3>
+            <ul class="space-y-2">
+              <li
+                class="flex justify-between items-center py-2 border-b border-gray-200"
+              >
+                <span class="font-medium">Bangla</span>
+                <span
+                  class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full"
+                  >Native</span
+                >
+              </li>
+              <li
+                class="flex justify-between items-center py-2 border-b border-gray-200"
+              >
+                <span class="font-medium">English</span>
+                <span
+                  class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full"
+                  >Fluent</span
+                >
+              </li>
+              <li class="flex justify-between items-center py-2">
+                <span class="font-medium">Hindi</span>
+                <span
+                  class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full"
+                  >Conversational</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-primary mb-6 section-title">
+              Affiliations
+            </h3>
+            <div class="mb-6 last:mb-0 flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary"
+              >
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">Associate, Development Wing</h4>
+                <p class="text-gray-600">UIU Computer Club (2024 - Present)</p>
+                <p class="text-sm text-gray-500 mt-1">
+                  Contribute to technical workshops and events for computer
+                  science students
+                </p>
+              </div>
+            </div>
+            <div class="mb-6 last:mb-0 flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary"
+              >
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">Volunteer</h4>
+                <p class="text-gray-600">IDP Roadshow 2025 (2025)</p>
+                <p class="text-sm text-gray-500 mt-1">
+                  Assisted in organizing educational fair for international
+                  studies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">
+          Let's Build Something Amazing Together
+        </h2>
+        <p class="text-white/90 max-w-2xl mx-auto mb-8">
+          I'm currently looking for new opportunities to apply my skills and
+          contribute to innovative projects. Whether you have a question or want
+          to discuss a potential project, feel free to reach out!
+        </p>
+        <a
+          href="mailto:asadullahimran19@gmail.com"
+          class="inline-block bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-dark text-white">
+      <div class="container mx-auto px-6">
+        <div
+          class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-xl font-bold gradient-text">Asadullah Imran</h3>
+            <p class="text-gray-400 mt-2">MERN Stack Developer | CSE Student</p>
+          </div>
+          <div class="flex space-x-6">
+            <a
+              href="https://github.com/Asadullah-Imran"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asadullah-imran/"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/asadullahimran19/"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i class="fas fa-code text-xl"></i>
+            </a>
+          </div>
+        </div>
+        <div class="mt-8 text-center text-gray-500 text-sm">
+          <p>&copy; 2024 Asadullah Imran. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple animation on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const animatedItems = document.querySelectorAll(".animate-fadeIn");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = "running";
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        animatedItems.forEach((item) => {
+          item.style.animationPlayState = "paused";
+          observer.observe(item);
+        });
+      });
+    </script>
+  </body>
+</html>

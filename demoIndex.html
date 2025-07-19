@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asadullah Imran | MERN Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4e54c8",
+              "primary-light": "#6a6fd8",
+              "primary-dark": "#3a3f9e",
+              secondary: "#8f94fb",
+              "secondary-dark": "#777df9",
+              "secondary-light": "#a7abfc",
+              accent: "#00b4d8",
+              "accent-dark": "#0093b0",
+              "accent-light": "#00d9ff",
+              dark: "#1e1e2d",
+              light: "#f8f9fa",
+              white: "#ffffff",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              fadeIn: "fadeIn 0.6s ease-out forwards",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+              fadeIn: {
+                "0%": { opacity: 0, transform: "translateY(20px)" },
+                "100%": { opacity: 1, transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap");
+
+      body {
+        background: linear-gradient(135deg, #f8f9fa 0%, #eef2f6 100%);
+        scroll-behavior: smooth;
+      }
+
+      .gradient-text {
+        background: linear-gradient(45deg, #4e54c8, #8f94fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .pattern {
+        background-image: radial-gradient(#4e54c833 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #3a3f9e, #777df9);
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-dark antialiased">
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold text-primary">Asadullah Imran</a>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="text-gray-600 hover:text-primary font-medium transition"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-primary font-medium transition"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-600 hover:text-primary font-medium transition"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-600 hover:text-primary font-medium transition"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-600 hover:text-primary font-medium transition"
+            >Contact</a
+          >
+        </nav>
+        <button class="md:hidden text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center pt-20 pb-12 pattern"
+    >
+      <div
+        class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 mb-12 md:mb-0 animate-fadeIn">
+          <div class="mb-4">
+            <span
+              class="bg-primary/10 text-primary px-4 py-1 rounded-full font-medium"
+              >MERN Stack Developer</span
+            >
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 text-primary">
+            Asadullah <span class="gradient-text">Imran</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-secondary">
+            Building scalable digital solutions with JavaScript ecosystems
+          </h2>
+          <p class="text-lg text-gray-600 mb-8 max-w-lg">
+            Final-year Computer Science student at United International
+            University with a 3.95 CGPA. Passionate about building innovative
+            web applications.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl flex items-center gap-2"
+            >
+              <i class="fas fa-laptop-code"></i> View Projects
+            </a>
+            <a
+              href="#"
+              class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"
+            >
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="mt-8 flex space-x-4">
+            <a
+              href="https://github.com/Asadullah-Imran"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asadullah-imran/"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/asadullahimran19/"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate-fadeIn">
+          <div class="relative">
+            <div
+              class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-lg opacity-20 animate-pulse"
+            ></div>
+            <div
+              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl float"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                alt="Asadullah Imran"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-primary mb-4">About Me</h2>
+          <div class="h-1 w-20 bg-primary mx-auto mb-8"></div>
+          <p class="text-lg text-gray-600 mb-6">
+            Final-year Computer Science student at United International
+            University (CGPA 3.95). Passionate MERN Stack developer with strong
+            problem-solving skills. Experienced in building modern full-stack
+            applications and participating in competitive programming contests.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4 mx-auto"
+              >
+                <i class="fas fa-graduation-cap text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Education</h3>
+              <p class="text-gray-600">
+                BSc in Computer Science at United International University
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4 mx-auto"
+              >
+                <i class="fas fa-laptop-code text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Specialization</h3>
+              <p class="text-gray-600">
+                MERN Stack Development with JavaScript
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4 mx-auto"
+              >
+                <i class="fas fa-globe-asia text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Location</h3>
+              <p class="text-gray-600">Dhaka, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-primary mb-4">My Skills</h2>
+          <div class="h-1 w-20 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <!-- Programming Skills -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-code text-primary text-xl"></i>
+              </div>
+              <h2 class="text-2xl font-bold">Programming Languages</h2>
+            </div>
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">JavaScript</span>
+                  <span class="text-primary font-bold">90%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Java</span>
+                  <span class="text-primary font-bold">85%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Python</span>
+                  <span class="text-primary font-bold">80%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">C</span>
+                  <span class="text-primary font-bold">75%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Skills -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-globe text-primary text-xl"></i>
+              </div>
+              <h2 class="text-2xl font-bold">Web Technologies</h2>
+            </div>
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">HTML/CSS</span>
+                  <span class="text-primary font-bold">95%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">React</span>
+                  <span class="text-primary font-bold">85%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Node.js</span>
+                  <span class="text-primary font-bold">80%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Express</span>
+                  <span class="text-primary font-bold">80%</span>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools Skills -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-tools text-primary text-xl"></i>
+              </div>
+              <h2 class="text-2xl font-bold">Tools & Software</h2>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Git</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >GitHub</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >VS Code</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Postman</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Figma</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Adobe Photoshop</span
+              >
+            </div>
+          </div>
+
+          <!-- Concepts Skills -->
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-lightbulb text-primary text-xl"></i>
+              </div>
+              <h2 class="text-2xl font-bold">Concepts & Knowledge</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Data Structures</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Algorithms</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >OOP</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Agile</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Responsive Design</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >REST APIs</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium"
+                >Version Control</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Featured Projects
+          </h2>
+          <div class="h-1 w-20 bg-primary mx-auto"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+            Explore some of my recent projects showcasing my skills in web
+            development and AI
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Project 1: CineMatch -->
+          <div
+            class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="CineMatch project"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 flex items-end p-4"
+              >
+                <h3 class="text-white text-xl font-bold">CineMatch</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-sm text-primary font-medium mb-2">
+                AI & Machine Learning
+              </p>
+              <p class="text-gray-600 mb-4">
+                Hybrid KNN-powered movie recommendations using FastAPI and
+                TF-IDF
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >FastAPI</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >TMDB API</span
+                >
+              </div>
+              <div class="flex justify-between">
+                <a href="#" class="text-primary hover:underline font-medium"
+                  >View Details</a
+                >
+                <a href="#" class="text-gray-500 hover:text-primary">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Placeholder -->
+          <div
+            class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Project placeholder"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 flex items-end p-4"
+              >
+                <h3 class="text-white text-xl font-bold">
+                  E-Commerce Platform
+                </h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-sm text-primary font-medium mb-2">
+                Web Development
+              </p>
+              <p class="text-gray-600 mb-4">
+                Full-featured e-commerce platform with payment integration
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >React</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >MongoDB</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Stripe</span
+                >
+              </div>
+              <div class="flex justify-between">
+                <a href="#" class="text-primary hover:underline font-medium"
+                  >View Details</a
+                >
+                <a href="#" class="text-gray-500 hover:text-primary">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Placeholder -->
+          <div
+            class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Project placeholder"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 flex items-end p-4"
+              >
+                <h3 class="text-white text-xl font-bold">
+                  Task Management System
+                </h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-sm text-primary font-medium mb-2">Productivity</p>
+              <p class="text-gray-600 mb-4">
+                Collaborative task management with real-time updates
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Vue.js</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Firebase</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >WebSockets</span
+                >
+              </div>
+              <div class="flex justify-between">
+                <a href="#" class="text-primary hover:underline font-medium"
+                  >View Details</a
+                >
+                <a href="#" class="text-gray-500 hover:text-primary">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl"
+          >
+            View All Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-r from-primary to-secondary"
+    >
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center text-white">
+          <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+          <div class="h-1 w-20 bg-white mx-auto mb-8"></div>
+          <p class="text-lg mb-12 max-w-2xl mx-auto">
+            Have a project in mind or want to discuss opportunities? Feel free
+            to reach out to me!
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+              <div
+                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto"
+              >
+                <i class="fas fa-envelope text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Email</h3>
+              <p>asadullahimran19@gmail.com</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+              <div
+                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto"
+              >
+                <i class="fas fa-phone text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Phone</h3>
+              <p>+880 1633-356249</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+              <div
+                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto"
+              >
+                <i class="fas fa-map-marker-alt text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Location</h3>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://github.com/Asadullah-Imran"
+              target="_blank"
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asadullah-imran/"
+              target="_blank"
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/asadullahimran19/"
+              target="_blank"
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 text-center">
+      <div class="container mx-auto px-6">
+        <p>&copy; 2024 Asadullah Imran. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a
+            href="https://github.com/Asadullah-Imran"
+            target="_blank"
+            class="hover:text-primary transition"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/asadullah-imran/"
+            target="_blank"
+            class="hover:text-primary transition"
+          >
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a
+            href="https://leetcode.com/u/asadullahimran19/"
+            target="_blank"
+            class="hover:text-primary transition"
+          >
+            <i class="fas fa-code text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Animation for elements when they come into view
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-fadeIn");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      document.querySelectorAll(".animate-fadeIn").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>

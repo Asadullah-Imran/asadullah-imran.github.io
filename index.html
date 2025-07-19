@@ -67,6 +67,20 @@
               sans: ["Inter", "sans-serif"],
               mono: ["Fira Code", "monospace"],
             },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              fadeIn: "fadeIn 0.6s ease-out forwards",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+              fadeIn: {
+                "0%": { opacity: 0, transform: "translateY(20px)" },
+                "100%": { opacity: 1, transform: "translateY(0)" },
+              },
+            },
           },
         },
       };
@@ -77,62 +91,130 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap");
+      body {
+        background: linear-gradient(135deg, #f8f9fa 0%, #eef2f6 100%);
+        scroll-behavior: smooth;
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #4e54c8, #8f94fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .pattern {
+        background-image: radial-gradient(#4e54c833 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+      /* Custom scrollbar styles from demoIndex.html */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #3a3f9e, #777df9);
+      }
+    </style>
   </head>
-
-  <body class="font-sans bg-light text-dark antialiased">
+  <body class="font-sans text-dark antialiased">
     <div id="navbar-include"></div>
-
     <!-- Hero Section -->
-    <header id="home" class="min-h-screen flex items-center pt-20">
+    <header
+      id="home"
+      class="min-h-screen flex items-center pt-20 pb-12 pattern"
+    >
       <div
-        class="container mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center opacity-0 translate-y-8 transition-all duration-1000"
-        id="hero-animate"
+        class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center"
       >
-        <div class="md:w-1/2 mb-12 md:mb-0">
+        <div class="md:w-1/2 mb-12 md:mb-0 animate-fadeIn">
+          <div class="mb-4">
+            <span
+              class="bg-primary/10 text-primary px-4 py-1 rounded-full font-medium"
+              >MERN Stack Developer</span
+            >
+          </div>
           <h1 class="text-4xl md:text-6xl font-bold mb-4 text-primary">
-            Asadullah Imran
+            Asadullah <span class="gradient-text">Imran</span>
           </h1>
           <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-secondary">
-            MERN Stack Developer | CSE Student
+            Building scalable digital solutions with JavaScript ecosystems
           </h2>
-          <p class="text-lg mb-8 max-w-lg">
+          <p class="text-lg text-gray-600 mb-8 max-w-lg">
             Building digital solutions with JavaScript ecosystems.
           </p>
-          <div class="flex space-x-4">
+          <div class="flex flex-wrap gap-4">
             <a
               href="projects.html"
-              class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl"
-              >View My Work</a
+              class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl flex items-center gap-2"
             >
+              <i class="fas fa-laptop-code"></i> View Projects
+            </a>
             <a
               href="docs/Asadullah_Imran_CV.pdf"
               download
-              class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition"
-              >Download CV</a
+              class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"
             >
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="mt-8 flex space-x-4">
+            <a
+              href="https://github.com/Asadullah-Imran"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asadullah-imran/"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/asadullahimran19/"
+              target="_blank"
+              class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"
+            >
+              <i class="fas fa-code"></i>
+            </a>
           </div>
         </div>
-        <div class="md:w-1/2 flex justify-center">
-          <div
-            class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-xl"
-          >
-            <img
-              src="assets/images/profile/b.jpg"
-              alt="Asadullah Imran"
-              class="w-full h-full object-cover"
-            />
+        <div class="md:w-1/2 flex justify-center animate-fadeIn">
+          <div class="relative">
+            <div
+              class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-full blur-lg opacity-20 animate-pulse"
+            ></div>
+            <div
+              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl float"
+            >
+              <img
+                src="assets/images/profile/b.jpg"
+                alt="Asadullah Imran"
+                class="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
     </header>
-
     <!-- About -->
     <section id="about" class="py-20 bg-white">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-primary mb-6">About Me</h2>
+        <h2 class="text-3xl font-bold text-primary mb-4">About Me</h2>
+        <div class="h-1 w-20 bg-primary mx-auto mb-8"></div>
         <p class="text-lg max-w-3xl mx-auto">
           Computer Science student at United International University with a
           3.95 CGPA. Passionate about building web applications using modern
@@ -140,24 +222,29 @@
         </p>
       </div>
     </section>
-
     <!-- Skills -->
     <section id="skills" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-primary mb-12">Skills</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-primary mb-4 text-center">Skills</h2>
+        <div class="h-1 w-20 bg-primary mx-auto mb-8"></div>
         <div
-          id="skills-list"
-          class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto"
+          id="skills-cards"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
         >
-          <!-- Skills will be loaded dynamically -->
+          <!-- Skill cards will be loaded dynamically -->
         </div>
       </div>
     </section>
-
     <!-- Projects -->
     <section id="portfolio" class="py-20 bg-white">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-primary mb-12">Featured Projects</h2>
+        <h2 class="text-3xl font-bold text-primary mb-4">Featured Projects</h2>
+        <div class="h-1 w-20 bg-primary mx-auto mb-8"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+          Explore some of my recent projects showcasing my skills in web
+          development and AI
+        </p>
+        <div class="mb-10"></div>
         <div
           id="portfolio-projects"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -167,29 +254,24 @@
         <div class="mt-12">
           <a
             href="projects.html"
-            class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition"
-            >See All Projects</a
+            class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-xl"
           >
+            See All Projects
+          </a>
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-8 text-center">
-      <p>&copy; 2024 Asadullah Imran. All rights reserved.</p>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a href="#" class="hover:text-primary transition"
-          ><i class="fab fa-github text-xl"></i
-        ></a>
-        <a href="#" class="hover:text-primary transition"
-          ><i class="fab fa-linkedin text-xl"></i
-        ></a>
-        <a href="#" class="hover:text-primary transition"
-          ><i class="fab fa-leetcode text-xl"></i
-        ></a>
-      </div>
-    </footer>
-
+    <div id="footer-include"></div>
+    <script>
+      // Footer include
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("assets/components/footer.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("footer-include").innerHTML = data;
+          });
+      });
+    </script>
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
     <script>
