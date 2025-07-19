@@ -212,27 +212,3 @@
 .bg-white.shadow-md .swiper-button-prev:hover {
   opacity: 1;
 }
-
-.achievement-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  height: 100%;
-}
-.achievement-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(78, 84, 200, 0.15);
-}
-.cert-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-.cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(78, 84, 200, 0.15);
-}
