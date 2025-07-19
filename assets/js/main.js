@@ -92,7 +92,7 @@ function populateSkills(data) {
       .map((cat) => {
         const skills = data[cat.key] || [];
         return `
-          <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <div class="bg-white p-6 rounded-xl shadow-md text-center transition transform hover:-translate-y-1 hover:shadow-2xl duration-300">
             <div class="flex justify-center mb-4">
               <i class="${cat.icon} text-primary text-3xl"></i>
             </div>
@@ -101,7 +101,7 @@ function populateSkills(data) {
               ${skills
                 .map(
                   (skill) =>
-                    `<span class="bg-gray-100 text-gray-800 px-4 py-1 rounded-full font-medium">${
+                    `<span class="bg-gray-100 text-gray-800 px-4 py-1 rounded-full font-medium transition hover:bg-primary hover:text-white">${
                       typeof skill === "string" ? skill : skill.name
                     }</span>`
                 )
@@ -122,7 +122,7 @@ function populateProjects(data) {
       .slice(0, 3)
       .map(
         (project) => `
-      <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl duration-300">
         <div class="relative h-48 overflow-hidden">
           <img src="${project.featuredImage?.src || ""}" alt="${
           project.featuredImage?.alt || project.title
@@ -142,7 +142,7 @@ function populateProjects(data) {
             ${(project.technologies || [])
               .map(
                 (tech) => `
-              <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">${tech}</span>
+              <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full transition hover:bg-primary hover:text-white">${tech}</span>
             `
               )
               .join("")}
