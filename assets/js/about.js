@@ -73,8 +73,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     const eduDiv = document.getElementById("about-education");
     eduDiv.innerHTML = education
       .map(
-        (edu) => `
-        <div class="timeline-item animate-fadeIn">
+        (edu, i) => `
+        <div class="timeline-item animate-fadeIn" style="animation-delay: ${
+          i * 0.15
+        }s;">
           <div class="bg-white p-6 rounded-lg shadow-md">
             <h3 class="text-xl font-bold text-primary">${edu.degree}</h3>
             <p class="text-gray-600">${edu.institution} | ${edu.period}</p>
@@ -116,78 +118,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       `
       )
       .join("");
+    triggerFadeInAnimations();
   }
-
-  // Load languages
-  if (personal && personal.languages) {
-    const langDiv = document.getElementById("about-languages");
-    langDiv.innerHTML = `
-      <ul class="space-y-2">
-        ${personal.languages
-          .map(
-            (lang) => `
-            <li class="flex justify-between items-center py-2 border-b border-gray-200">
-              <span class="font-medium">${lang.name}</span>
-              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">${lang.level}</span>
-            </li>
-          `
-          )
-          .join("")}
-      </ul>
-    `;
-  }
-
-  // Load affiliations
-  const affiliations = await fetchData("data/affiliations.json");
-  if (affiliations) {
-    const affDiv = document.getElementById("about-affiliations");
-    affDiv.innerHTML += affiliations
-      .map(
-        (aff) => `
-        <div class="mb-6 last:mb-0 flex items-start gap-4">
-          ${
-            aff.image
-              ? `<img src="${aff.image}" alt="${
-                  aff.alt || aff.organization
-                }" class="w-12 h-12 object-cover rounded-full">`
-              : `<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <i class="fas fa-users text-primary"></i>
-                </div>`
-          }
-          <div>
-            <h4 class="font-bold">${aff.role}</h4>
-            <p class="text-gray-600">${aff.organization} (${aff.period})</p>
-            ${
-              aff.description
-                ? `<p class="text-sm text-gray-500 mt-1">${aff.description}</p>`
-                : ""
-            }
-          </div>
-        </div>
-      `
-      )
-      .join("");
-  }
-
-  function triggerFadeInAnimations() {
-    const animatedItems = document.querySelectorAll(".animate-fadeIn");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = "running";
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    animatedItems.forEach((item) => {
-      item.style.animationPlayState = "paused";
-      observer.observe(item);
-    });
-  }
-
   // Load achievements
   const achievements = await fetchData("data/achievements.json");
   if (achievements) {
@@ -261,5 +193,77 @@ document.addEventListener("DOMContentLoaded", async function () {
       )
       .join("");
     triggerFadeInAnimations();
+  }
+  // Load languages
+  if (personal && personal.languages) {
+    const langDiv = document.getElementById("about-languages");
+    langDiv.innerHTML = `
+      <ul class="space-y-2 animate-fadeIn">
+        ${personal.languages
+          .map(
+            (lang) => `
+            <li class="flex justify-between items-center py-2 border-b border-gray-200 animate-fadeIn">
+              <span class="font-medium">${lang.name}</span>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">${lang.level}</span>
+            </li>
+          `
+          )
+          .join("")}
+      </ul>
+    `;
+    triggerFadeInAnimations();
+  }
+  // Load affiliations
+  const affiliations = await fetchData("data/affiliations.json");
+  if (affiliations) {
+    const affDiv = document.getElementById("about-affiliations");
+    affDiv.innerHTML = affiliations
+      .map(
+        (aff, i) => `
+        <div class="mb-6 last:mb-0 flex items-start gap-4 animate-fadeIn" style="animation-delay: ${
+          i * 0.15
+        }s;">
+          ${
+            aff.image
+              ? `<img src="${aff.image}" alt="${
+                  aff.alt || aff.organization
+                }" class="w-12 h-12 object-cover rounded-full">`
+              : `<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <i class="fas fa-users text-primary"></i>
+                </div>`
+          }
+          <div>
+            <h4 class="font-bold">${aff.role}</h4>
+            <p class="text-gray-600">${aff.organization} (${aff.period})</p>
+            ${
+              aff.description
+                ? `<p class="text-sm text-gray-500 mt-1">${aff.description}</p>`
+                : ""
+            }
+          </div>
+        </div>
+      `
+      )
+      .join("");
+    triggerFadeInAnimations();
+  }
+
+  function triggerFadeInAnimations() {
+    const animatedItems = document.querySelectorAll(".animate-fadeIn");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = "running";
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    animatedItems.forEach((item) => {
+      item.style.animationPlayState = "paused";
+      observer.observe(item);
+    });
   }
 });

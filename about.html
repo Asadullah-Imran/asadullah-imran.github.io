@@ -374,7 +374,7 @@
       <div class="container mx-auto px-6">
         <div class="max-w-5xl mx-auto">
           <h2
-            class="text-3xl font-bold text-primary mb-12 text-center section-title"
+            class="text-3xl font-bold text-primary mb-12 text-center section-title animate-fadeIn"
           >
             Achievements
           </h2>
@@ -390,7 +390,7 @@
       <div class="container mx-auto px-6">
         <div class="max-w-5xl mx-auto">
           <h2
-            class="text-3xl font-bold text-primary mb-12 text-center section-title"
+            class="text-3xl font-bold text-primary mb-12 text-center section-title animate-fadeIn"
           >
             Certifications
           </h2>
@@ -405,13 +405,13 @@
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-6">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-white p-6 rounded-lg shadow-sm animate-fadeIn">
             <h3 class="text-2xl font-bold text-primary mb-6 section-title">
               Languages
             </h3>
             <div id="about-languages"></div>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-white p-6 rounded-lg shadow-sm animate-fadeIn">
             <h3 class="text-2xl font-bold text-primary mb-6 section-title">
               Affiliations
             </h3>
@@ -435,7 +435,6 @@
       // Simple animation on scroll
       document.addEventListener("DOMContentLoaded", function () {
         const animatedItems = document.querySelectorAll(".animate-fadeIn");
-
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
@@ -447,7 +446,6 @@
           },
           { threshold: 0.1 }
         );
-
         animatedItems.forEach((item) => {
           item.style.animationPlayState = "paused";
           observer.observe(item);
