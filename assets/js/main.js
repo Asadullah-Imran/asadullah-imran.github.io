@@ -21,12 +21,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   const skillsData = await fetchData("data/skills.json");
   if (skillsData) {
     populateSkills(skillsData);
+    triggerFadeInAnimations();
   }
 
   // Load projects data
   const projectsData = await fetchData("data/projects.json");
   if (projectsData) {
     populateProjects(projectsData);
+    triggerFadeInAnimations();
   }
 
   // Load certifications data
@@ -92,7 +94,7 @@ function populateSkills(data) {
       .map((cat) => {
         const skills = data[cat.key] || [];
         return `
-          <div class="bg-white p-6 rounded-xl shadow-md text-center transition transform hover:-translate-y-1 hover:shadow-2xl duration-300">
+          <div class="bg-white p-6 rounded-xl shadow-md text-center transition transform hover:-translate-y-1 hover:shadow-2xl duration-300 animate-fadeIn">
             <div class="flex justify-center mb-4">
               <i class="${cat.icon} text-primary text-3xl"></i>
             </div>
@@ -122,7 +124,7 @@ function populateProjects(data) {
       .slice(0, 3)
       .map(
         (project) => `
-      <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl duration-300">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-2xl duration-300 animate-fadeIn">
         <div class="relative h-48 overflow-hidden">
           <img src="${project.featuredImage?.src || ""}" alt="${
           project.featuredImage?.alt || project.title
@@ -249,4 +251,23 @@ function populateBlogPreview(posts) {
       )
       .join("");
   }
+}
+
+function triggerFadeInAnimations() {
+  const animatedItems = document.querySelectorAll(".animate-fadeIn");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = "running";
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  animatedItems.forEach((item) => {
+    item.style.animationPlayState = "paused";
+    observer.observe(item);
+  });
 }

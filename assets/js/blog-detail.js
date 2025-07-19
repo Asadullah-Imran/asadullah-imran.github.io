@@ -14,6 +14,25 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   }
 
+  function triggerFadeInAnimations() {
+    const animatedItems = document.querySelectorAll(".animate-fadeIn");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = "running";
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    animatedItems.forEach((item) => {
+      item.style.animationPlayState = "paused";
+      observer.observe(item);
+    });
+  }
+
   const postId = getQueryParam("id");
   const blogData = await fetchData("data/blog.json");
   const container = document.getElementById("blog-detail-container");
@@ -57,4 +76,5 @@ document.addEventListener("DOMContentLoaded", async function () {
       </div>
     </div>
   `;
+  triggerFadeInAnimations();
 });

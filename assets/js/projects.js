@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       .slice(0, count)
       .map(
         (project, idx) => `
-      <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300 flex flex-col min-h-[500px]" 
+      <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300 flex flex-col min-h-[500px] animate-fadeIn" 
            data-category="${project.isAcademic ? "academic" : "web"}">
         <div class="relative h-48 overflow-hidden group">
           <a href="project-detail.html?id=${projectsData.indexOf(project)}">
@@ -168,4 +168,24 @@ document.addEventListener("DOMContentLoaded", async function () {
       renderProjects(button.dataset.filter, currentCount);
     });
   });
+
+  function triggerFadeInAnimations() {
+    const animatedItems = document.querySelectorAll(".animate-fadeIn");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = "running";
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    animatedItems.forEach((item) => {
+      item.style.animationPlayState = "paused";
+      observer.observe(item);
+    });
+  }
+  triggerFadeInAnimations();
 });

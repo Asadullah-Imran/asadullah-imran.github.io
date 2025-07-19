@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   blogList.innerHTML = blogData.posts
     .map(
       (post) => `
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col animate-fadeIn">
         <div class="h-48 overflow-hidden">
           <img src="${post.image}" alt="${
         post.alt || post.title
@@ -49,4 +49,25 @@ document.addEventListener("DOMContentLoaded", async function () {
     `
     )
     .join("");
+
+  triggerFadeInAnimations();
 });
+
+function triggerFadeInAnimations() {
+  const animatedItems = document.querySelectorAll(".animate-fadeIn");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = "running";
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  animatedItems.forEach((item) => {
+    item.style.animationPlayState = "paused";
+    observer.observe(item);
+  });
+}
