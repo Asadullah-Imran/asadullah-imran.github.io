@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "My Journey Learning React",
+      "excerpt": "How I went from beginner to building full React applications",
+      "date": "2024-05-15",
+      "tags": ["React", "Frontend", "Learning"],
+      "image": "assets/images/blog/a.jpg",
+      "alt": "Laptop with React logo and code editor - My Journey Learning React blog post image",
+      "file": "blog/react-journey.html",
+      "readTime": "5 min"
+    },
+    {
+      "id": 2,
+      "title": "Competitive Programming Tips",
+      "excerpt": "Lessons from participating in ICPC as a beginner",
+      "date": "2024-04-22",
+      "tags": ["Algorithms", "Competitive", "ICPC"],
+      "image": "assets/images/blog/b.jpg",
+      "alt": "ICPC contest illustration - Competitive Programming Tips blog post image",
+      "file": "blog/icpc-tips.html",
+      "readTime": "8 min"
+    },
+    {
+      "id": 3,
+      "title": "Building My First Full-Stack App",
+      "excerpt": "A walkthrough of creating a MERN stack task manager",
+      "date": "2024-03-10",
+      "tags": ["MERN", "Fullstack", "Node.js"],
+      "image": "assets/images/blog/c.jpg",
+      "alt": "MERN stack icons and code - Building My First Full-Stack App blog post image",
+      "file": "blog/fullstack-app.html",
+      "readTime": "10 min"
+    }
+  ],
+  "categories": [
+    { "name": "Web Development", "count": 2 },
+    { "name": "Competitive Programming", "count": 1 },
+    { "name": "Student Life", "count": 1 }
+  ]
+}

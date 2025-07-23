@@ -1,0 +1,23 @@
+[
+  {
+    "title": "AOOP Lab Course Champion",
+    "organization": "United International University",
+    "year": "2024",
+    "description": "Awarded for best project in Advanced Object-Oriented Programming course using Java and Swing.",
+    "image": "assets/images/awards/a.jpg"
+  },
+  {
+    "title": "UIHP Position Holder",
+    "organization": "University Innovation Hub Program",
+    "year": "2024",
+    "description": "Recognized for innovation and teamwork as part of the 'In|turn' team during UIU's innovation challenge.",
+    "image": "assets/images/awards/b.jpg"
+  },
+  {
+    "title": "ICPC Participant",
+    "organization": "International Collegiate Programming Contest",
+    "year": "2024",
+    "description": "Participated in the ICPC preliminary round, applying problem-solving and algorithmic skills.",
+    "image": "assets/images/awards/c.jpg"
+  }
+]

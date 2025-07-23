@@ -1,0 +1,196 @@
+[
+  {
+    "title": "CineMatch - Intelligent Movie Recommendation System",
+
+    "tagline": "Hybrid KNN-powered movie recommendations using FastAPI and TF-IDF",
+    "description": "A full-stack AI-powered movie recommendation system that uses a manual KNN implementation with hybrid filtering. Built to deepen my understanding of recommendation engines during my AI course.",
+    "technologies": [
+      "FastAPI",
+      "Python",
+      "NumPy",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "TMDB API"
+    ],
+    "purpose": "I built CineMatch to better understand how recommendation systems work by implementing KNN from scratch and exploring content-based and collaborative filtering.",
+    "learnings": [
+      "Manual implementation of KNN algorithm",
+      "Using TF-IDF for content-based similarity",
+      "Balancing content and collaborative features in hybrid recommendations",
+      "Building REST APIs with FastAPI"
+    ],
+    "challenges": [
+      "Optimizing distance calculations for large datasets",
+      "Caching API responses to handle TMDB rate limits",
+      "Designing a responsive and clean UI for movie discovery"
+    ],
+    "impact": "Strengthened my understanding of AI concepts and how to turn them into real-world, user-facing applications.",
+    "features": [
+      "Hybrid recommendation engine",
+      "Movie search with autocomplete",
+      "Detailed movie info modals",
+      "Trending and genre-based browsing"
+    ],
+    "github": "https://github.com/Asadullah-Imran/Movie_recomendation_applying_KNN",
+    "demo": "https://asadullah-imran.github.io/Movie_recomendation_applying_KNN",
+    "featuredImage": {
+      "src": "assets/images/projects/cinematch/ss_recomendation.png",
+      "alt": "Featured screenshot of CineMatch movie recommendation project"
+    },
+    "screenshots": [
+      {
+        "src": "assets/images/projects/cinematch/ss_home.png",
+        "caption": "CineMatch home page with trending and recommended movies"
+      },
+      {
+        "src": "assets/images/projects/cinematch/ss_genre.png",
+        "caption": "Genre browsing with dynamically loaded movie lists"
+      },
+      {
+        "src": "assets/images/projects/cinematch/ss_movie_details.png",
+        "caption": "Detailed movie information with cast and trailer"
+      },
+      {
+        "src": "assets/images/projects/cinematch/ss_recomendation.png",
+        "caption": "Recommended movies based on hybrid KNN model"
+      }
+    ],
+    "category": ["AI & Machine Learning", "Web Development"],
+    "isAcademic": true,
+    "date": "2025-07-15"
+  },
+  {
+    "title": "Monster Munchkins — Java RPG Adventure Game",
+    "tagline": "JavaFX-powered tile-based RPG with real-time chat, persistent world, and championed in AOOP Lab",
+    "description": "Monster Munchkins is a Java-based, tile-oriented adventure game with RPG elements, real-time global chat, and persistent user progress. Built for an Advanced OOP lab, it features a rich world, asset-driven environments, and a MySQL-backed database for user and world data. Players explore, battle monsters, interact with NPCs, collect items, and communicate globally—all in a custom JavaFX UI.",
+    "technologies": [
+      "Java",
+      "JavaFX",
+      "MySQL",
+      "Maven",
+      "JDBC",
+      "FXML",
+      "Socket Programming"
+    ],
+    "purpose": "Developed as a team project for the Advanced Object Oriented Programming laboratory course, with the goal of building a feature-rich, persistent multiplayer RPG from scratch. The project aimed to combine advanced Java concepts, database integration, and real-time networking.",
+    "learnings": [
+      "Advanced Java OOP patterns and modular design",
+      "Integrating JavaFX for custom UI and game rendering",
+      "Implementing real-time global chat with sockets",
+      "Database schema design and persistence with MySQL",
+      "Managing game state, inventory, and user progress",
+      "Team collaboration and version control with Git"
+    ],
+    "challenges": [
+      "Synchronizing real-time chat and game state",
+      "Efficiently persisting and loading large world data",
+      "Designing a flexible entity and inventory system",
+      "Balancing gameplay and debugging multiplayer features",
+      "Creating custom graphics and UI assets"
+    ],
+    "impact": "Our team became the champion among 60+ teams in the AOOP lab. The project was praised for its technical depth, polish, and innovative features like global chat and persistent world state.",
+    "features": [
+      "Tile-based world with interactive objects and NPCs",
+      "Real-time global chat system (client/server)",
+      "Persistent user progress and inventory (MySQL)",
+      "Boss battles and unique monster AI",
+      "Asset-driven UI with custom graphics and sound",
+      "Shop, medical, and treasure systems",
+      "Dynamic quests and event handling",
+      "Modular codebase for easy extension"
+    ],
+    "github": "https://github.com/Asadullah-Imran/MonsterMunchkins",
+    "demo": "https://youtu.be/zc406nTytZ4?si=YOuMyCu4L_-P7Csz",
+    "featuredImage": {
+      "src": "images/projects/monsterMunchkins/ss_boss_slime.png",
+      "alt": "Monster Munchkins - Mother Slime Boss Battle"
+    },
+    "screenshots": [
+      {
+        "src": "images/projects/monsterMunchkins/ss_devil_place_1.png",
+        "caption": "Devil Island - Entrance"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_devil_place_2.png",
+        "caption": "Devil Island - Deep Area"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_boss_slime.png",
+        "caption": "Mother Slime Boss Battle"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_ship_to_go_island.png",
+        "caption": "Sailing to the Far Island"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_chat_to_other_hunter.png",
+        "caption": "Chatting with Other Hunters"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_rock_break.png",
+        "caption": "Breaking Rocks to Clear Path"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_got_treasure.png",
+        "caption": "Found a Treasure!"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_wood_cut_1.png",
+        "caption": "Cutting Down Trees"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_conversation.png",
+        "caption": "NPC Conversation"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_shop_1.png",
+        "caption": "Tool Shop"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_shop_2.png",
+        "caption": "Potion Shop"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_hospital.png",
+        "caption": "Medical Shop"
+      },
+      {
+        "src": "images/projects/monsterMunchkins/ss_player_house_1.png",
+        "caption": "Player's House"
+      }
+    ],
+    "category": ["Game Development", "Java", "Database", "AOOP Lab"],
+    "isAcademic": true,
+    "date": "2024-04-10",
+    "team": {
+      "team_logo": null,
+      "team_name": "Team Defenders",
+      "team_leader": {
+        "name": "Asadullah Imran",
+        "link": "https://github.com/Asadullah-Imran"
+      },
+      "team_members": [
+        {
+          "name": "Redowan Tanvir Shifat",
+          "link": "https://github.com/Redowan-Tanvir-Shifat"
+        },
+        {
+          "name": "Tawfiqur Rahman",
+          "link": "https://github.com/Tawfiq-Rahman"
+        }
+      ]
+    },
+    "awards": ["AOOP Lab Champion (Spring 2024)"],
+    "video": "https://youtu.be/zc406nTytZ4?si=YOuMyCu4L_-P7Csz",
+    "documentation": "https://github.com/Asadullah-Imran/Monster_Munchkins/blob/redowan/documentation.md",
+    "databaseSchema": "https://github.com/Asadullah-Imran/Monster_Munchkins/blob/redowan/db_schema.sql",
+    "buildInstructions": [
+      "Java 11+, Maven, MySQL required.",
+      "Place MySQL JDBC driver in lib/.",
+      "Configure DB as per schema.",
+      "Run 'mvn clean install' then 'mvn javafx:run' or run MainGame.java.",
+      "Start chat server for global chat."
+    ]
+  }
+]
