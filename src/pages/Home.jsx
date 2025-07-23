@@ -104,7 +104,8 @@ const Home = () => {
                 View Projects
               </Link>
               <a
-                href="#"
+                href="/docs/Asadullah_Imran_CV.pdf"
+                download
                 className="border-2 border-[#089BAB] text-[#089BAB] hover:bg-[#089BAB] hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 group"
               >
                 <FaDownload className="group-hover:translate-y-1 transition-transform" />

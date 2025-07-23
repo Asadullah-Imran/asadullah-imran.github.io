@@ -3,15 +3,30 @@
     { "name": "JavaScript", "level": 90 },
     { "name": "Java", "level": 85 },
     { "name": "Python", "level": 80 },
-    { "name": "C", "level": 75 }
+    { "name": "C", "level": 75 },
+    { "name": "SQL", "level": 75 }
   ],
   "web": [
     { "name": "HTML/CSS", "level": 95 },
     { "name": "React", "level": 85 },
     { "name": "Node.js", "level": 80 },
-    { "name": "Express", "level": 80 }
+    { "name": "Express", "level": 80 },
+    { "name": "FastAPI", "level": 70 },
+    { "name": "TMDB API", "level": 70 }
   ],
-  "tools": ["Git", "GitHub", "VS Code", "Postman", "Figma", "Adobe Photoshop"],
+  "tools": [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Postman",
+    "Figma",
+    "Adobe Photoshop",
+    "Maven",
+    "MySQL",
+    "JDBC",
+    "FXML",
+    "Socket Programming"
+  ],
   "concepts": [
     "Data Structures",
     "Algorithms",
@@ -19,6 +34,16 @@
     "Agile Methodologies",
     "Responsive Design",
     "REST APIs",
-    "Version Control"
+    "Version Control",
+    "KNN",
+    "TF-IDF",
+    "Content-based Filtering",
+    "Collaborative Filtering",
+    "Hybrid Recommendation",
+    "Database Schema Design",
+    "Real-time Networking",
+    "Caching",
+    "API Rate Limiting",
+    "Team Collaboration"
   ]
 }
