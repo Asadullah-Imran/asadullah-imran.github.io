@@ -192,5 +192,69 @@
       "Run 'mvn clean install' then 'mvn javafx:run' or run MainGame.java.",
       "Start chat server for global chat."
     ]
+  },
+  {
+    "title": "Exam Routine Generator",
+    "tagline": "Frontend-only app for generating personalized exam schedules and room numbers for UIU students.",
+    "description": "A browser-based tool that allows United International University students to generate their personalized exam schedules and instantly find their exam room numbers. No backend required—everything runs in the browser for maximum reliability during high-traffic exam periods.",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Python (for data conversion)",
+      "JSON"
+    ],
+    "purpose": "To make it easy for students to find their exam room numbers and schedules without searching through large Excel sheets or PDFs.",
+    "learnings": [
+      "Building fully static, frontend-only web apps",
+      "Efficient data filtering and search in the browser",
+      "Automating data conversion from Excel to JSON with Python",
+      "Designing for high concurrency and reliability"
+    ],
+    "challenges": [
+      "Handling large datasets efficiently in the browser",
+      "Ensuring a smooth and responsive UI for all devices",
+      "Making the tool intuitive for non-technical users"
+    ],
+    "impact": "Helped many students at UIU quickly find their exam rooms and schedules, reducing stress and confusion during exam periods.",
+    "features": [
+      "No backend required—100% static app",
+      "Autocomplete for course names",
+      "Personalized routine generation",
+      "Instant room finder",
+      "Download as PDF or PNG",
+      "Responsive, mobile-friendly UI"
+    ],
+    "github": "https://github.com/Asadullah-Imran/ExamRoutineGenerator",
+    "demo": "https://examroutine.vercel.app/",
+    "featuredImage": {
+      "src": "images/projects/ExamRoutineGenerator/ss_start.png",
+      "alt": "Exam Routine Generator - App Start Screen"
+    },
+    "screenshots": [
+      {
+        "src": "images/projects/ExamRoutineGenerator/ss_start.png",
+        "caption": "App Start Screen"
+      },
+      {
+        "src": "images/projects/ExamRoutineGenerator/ss_adding_routine.png",
+        "caption": "Adding Courses and Sections"
+      },
+      {
+        "src": "images/projects/ExamRoutineGenerator/ss_generated_routine.png",
+        "caption": "Generated Routine Table"
+      }
+    ],
+    "category": ["Web Development", "Education", "Frontend"],
+    "isAcademic": false,
+    "date": "2024-06-01",
+    "documentation": "https://github.com/Asadullah-Imran/ExamRoutineGenerator#readme",
+    "buildInstructions": [
+      "Open index.html in your browser or visit the live demo.",
+      "Enter your Student ID and select your program.",
+      "Add your courses and sections.",
+      "Click 'Generate Routine' to see your personalized schedule.",
+      "Download as PDF or PNG if needed."
+    ]
   }
 ]
