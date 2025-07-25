@@ -256,5 +256,85 @@
       "Click 'Generate Routine' to see your personalized schedule.",
       "Download as PDF or PNG if needed."
     ]
+  },
+  {
+    "title": "likhalikhi - Modern Full-Stack Blog Application",
+    "tagline": "A modern, full-stack blog app with React frontend, Node.js/Express backend, and MongoDB.",
+    "description": "BlogSphere is a platform for users to share thoughts, ideas, and stories. It supports user authentication, post creation/editing, comments, reactions, and profile management. The app is built with scalability and modern best practices in mind.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Cloudinary",
+      "Tailwind CSS"
+    ],
+    "purpose": "To provide a modern, scalable platform for blogging with robust authentication, post management, and a clean UI.",
+    "learnings": [
+      "Full-stack app architecture",
+      "JWT authentication and protected routes",
+      "RESTful API design with Express",
+      "MongoDB schema design and integration",
+      "Cloudinary image uploads",
+      "Context API for state management in React",
+      "Responsive UI with Tailwind CSS"
+    ],
+    "challenges": [
+      "Integrating Cloudinary for image uploads",
+      "Managing authentication and protected routes",
+      "Ensuring responsive and accessible UI",
+      "Handling .env and deployment issues"
+    ],
+    "impact": "Built a scalable, production-ready blog platform and deepened my understanding of full-stack development best practices.",
+    "features": [
+      "User authentication (JWT)",
+      "Protected routes",
+      "Post CRUD (create, edit, delete)",
+      "User profiles",
+      "Comments and reactions",
+      "Image uploads (Cloudinary)",
+      "Responsive, modern UI",
+      "Dark mode support"
+    ],
+    "github": "https://github.com/Asadullah-Imran/likhalikhi",
+    "demo": "https://likhalikhi.vercel.app/",
+    "featuredImage": {
+      "src": "images/projects/likhalikhi/ss_home_page.png",
+      "alt": "BlogSphere - Home Page"
+    },
+    "screenshots": [
+      {
+        "src": "images/projects/likhalikhi/ss_home_page.png",
+        "caption": "Home Page"
+      },
+      {
+        "src": "images/projects/likhalikhi/ss_all_blog_post.png",
+        "caption": "All Blog Posts"
+      },
+      {
+        "src": "images/projects/likhalikhi/ss_write_blog.png",
+        "caption": "Write Blog Page"
+      },
+      {
+        "src": "images/projects/likhalikhi/ss_profile_page.png",
+        "caption": "Profile Page"
+      },
+      {
+        "src": "images/projects/likhalikhi/ss_login_page.png",
+        "caption": "Login Page"
+      }
+    ],
+    "category": ["Web Development", "Full Stack", "React", "Node.js"],
+    "isAcademic": false,
+    "date": "2024-07-01",
+    "documentation": "https://github.com/Asadullah-Imran/likhalikhi#readme",
+    "buildInstructions": [
+      "Clone the repository and install dependencies for both frontend and backend.",
+      "Set up .env files for backend with MongoDB and Cloudinary credentials.",
+      "Run backend (Node.js/Express) and frontend (React) dev servers.",
+      "Access the app at http://localhost:5173/"
+    ]
   }
 ]
