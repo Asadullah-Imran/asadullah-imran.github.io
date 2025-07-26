@@ -35,24 +35,24 @@
     "github": "https://github.com/Asadullah-Imran/Movie_recomendation_applying_KNN",
     "demo": "https://asadullah-imran.github.io/Movie_recomendation_applying_KNN",
     "featuredImage": {
-      "src": "assets/images/projects/cinematch/ss_recomendation.png",
+      "src": "images/projects/cinematch/ss_recomendation.png",
       "alt": "Featured screenshot of CineMatch movie recommendation project"
     },
     "screenshots": [
       {
-        "src": "assets/images/projects/cinematch/ss_home.png",
+        "src": "images/projects/cinematch/ss_home.png",
         "caption": "CineMatch home page with trending and recommended movies"
       },
       {
-        "src": "assets/images/projects/cinematch/ss_genre.png",
+        "src": "images/projects/cinematch/ss_genre.png",
         "caption": "Genre browsing with dynamically loaded movie lists"
       },
       {
-        "src": "assets/images/projects/cinematch/ss_movie_details.png",
+        "src": "images/projects/cinematch/ss_movie_details.png",
         "caption": "Detailed movie information with cast and trailer"
       },
       {
-        "src": "assets/images/projects/cinematch/ss_recomendation.png",
+        "src": "images/projects/cinematch/ss_recomendation.png",
         "caption": "Recommended movies based on hybrid KNN model"
       }
     ],
