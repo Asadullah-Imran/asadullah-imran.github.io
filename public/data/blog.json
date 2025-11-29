@@ -2,41 +2,217 @@
   "posts": [
     {
       "id": 1,
-      "title": "My Journey Learning React",
-      "excerpt": "How I went from beginner to building full React applications",
-      "date": "2024-05-15",
-      "tags": ["React", "Frontend", "Learning"],
-      "image": "assets/images/blog/a.jpg",
-      "alt": "Laptop with React logo and code editor - My Journey Learning React blog post image",
-      "file": "blog/react-journey.html",
-      "readTime": "5 min"
+      "title": "Mastering GitHub for Developers",
+      "excerpt": "Learn how to use GitHub effectively for version control, collaboration, and project management.",
+      "date": "2025-11-01",
+      "tags": ["GitHub", "Version Control", "Git"],
+      "categories": ["GitHub", "Web Development"],
+      "readTime": "10 min",
+      "image": "assets/images/blog/github-main.jpg",
+      "alt": "GitHub dashboard screenshot",
+      "sections": [
+        {
+          "blocks": [
+            {
+              "text": "GitHub is an essential tool for developers. It allows you to manage your code, collaborate with others, and keep track of your project history. Whether you're a beginner or experienced, mastering GitHub workflows can significantly improve your productivity."
+            },
+            {
+              "text": "In this guide, we'll cover the main concepts of GitHub and how to use them effectively.",
+              "image": "assets/images/blog/github-overview.jpg",
+              "alt": "GitHub overview illustration",
+              "description": "Understanding the GitHub interface and workflow"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 1. Setting up a Repository\nStart by creating a new repository on GitHub. You can initialize it with a README and choose a license. After creating the repository, clone it locally using:"
+            },
+            {
+              "text": "```bash\ngit clone https://github.com/username/repo.git\n```",
+              "image": "assets/images/blog/github-clone.jpg",
+              "alt": "GitHub clone command screenshot",
+              "description": "Cloning a repository to your local machine"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 2. Branching Strategy\nUse branches to manage features and fixes separately. For example, create a feature branch with:"
+            },
+            {
+              "text": "```bash\ngit checkout -b feature-login\n```",
+              "image": "assets/images/blog/github-branch.jpg",
+              "alt": "Creating a branch in GitHub",
+              "description": "Branch creation allows parallel development"
+            },
+            {
+              "text": "Merge the branch back to `main` only after reviewing changes. This workflow helps in maintaining clean code."
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 3. Collaboration and Pull Requests\nGitHub's pull requests let team members review code before merging. You can also leave comments and request changes."
+            },
+            {
+              "text": "For more details, check out the ",
+              "link": {
+                "href": "https://docs.github.com/",
+                "text": "official GitHub documentation"
+              }
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "By mastering these GitHub workflows, you'll be able to collaborate efficiently and manage your projects professionally."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Competitive Programming Tips",
-      "excerpt": "Lessons from participating in ICPC as a beginner",
-      "date": "2024-04-22",
-      "tags": ["Algorithms", "Competitive", "ICPC"],
-      "image": "assets/images/blog/b.jpg",
-      "alt": "ICPC contest illustration - Competitive Programming Tips blog post image",
-      "file": "blog/icpc-tips.html",
-      "readTime": "8 min"
+      "title": "Accounting Basics for Beginners",
+      "excerpt": "A complete guide to understanding fundamental accounting concepts for students and beginners.",
+      "date": "2025-10-20",
+      "tags": ["Accounting", "Finance", "Student"],
+      "categories": ["Accounting", "Student Life"],
+      "readTime": "9 min",
+      "image": "assets/images/blog/accounting-main.jpg",
+      "alt": "Accounting ledger illustration",
+      "sections": [
+        {
+          "blocks": [
+            {
+              "text": "Accounting is often called the language of business. It helps individuals and organizations keep track of finances, make informed decisions, and plan for the future."
+            },
+            {
+              "text": "This guide will explain the basics of accounting in simple terms.",
+              "image": "assets/images/blog/accounting-overview.jpg",
+              "alt": "Accounting overview illustration",
+              "description": "Overview of accounting principles"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 1. Key Accounting Concepts\n- **Assets:** Resources owned by a company or individual.\n- **Liabilities:** Obligations or debts.\n- **Equity:** Owner's interest in the business."
+            },
+            {
+              "image": "assets/images/blog/accounting-ledger.jpg",
+              "alt": "Ledger example",
+              "description": "A basic ledger entry example"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 2. Double-Entry System\nEvery transaction affects at least two accounts. This ensures the accounting equation `Assets = Liabilities + Equity` stays balanced."
+            },
+            {
+              "text": "For example, purchasing office supplies with cash reduces assets (cash) but increases assets (supplies)."
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 3. Financial Statements\nThe main financial statements include:\n- **Income Statement:** Shows profit or loss over a period.\n- **Balance Sheet:** Shows assets, liabilities, and equity.\n- **Cash Flow Statement:** Shows cash inflows and outflows."
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "Learning these basics helps students understand how businesses track money and make decisions. Use online resources such as ",
+              "link": {
+                "href": "https://www.accountingcoach.com/",
+                "text": "AccountingCoach"
+              },
+              "text2": " to practice and improve your skills."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Building My First Full-Stack App",
-      "excerpt": "A walkthrough of creating a MERN stack task manager",
-      "date": "2024-03-10",
-      "tags": ["MERN", "Fullstack", "Node.js"],
-      "image": "assets/images/blog/c.jpg",
-      "alt": "MERN stack icons and code - Building My First Full-Stack App blog post image",
-      "file": "blog/fullstack-app.html",
-      "readTime": "10 min"
+      "title": "Networking Fundamentals for IT Beginners",
+      "excerpt": "A comprehensive guide to understanding networking concepts and protocols for beginners.",
+      "date": "2025-09-15",
+      "tags": ["Networking", "TCP/IP", "Infrastructure"],
+      "categories": ["Networking", "Web Development"],
+      "readTime": "11 min",
+      "image": "assets/images/blog/networking-main.jpg",
+      "alt": "Network diagram illustration",
+      "sections": [
+        {
+          "blocks": [
+            {
+              "text": "Networking is the practice of connecting computers and devices to share resources and information. Understanding networking fundamentals is crucial for IT professionals."
+            },
+            {
+              "text": "We'll cover essential concepts, protocols, and tools for beginners.",
+              "image": "assets/images/blog/networking-overview.jpg",
+              "alt": "Networking overview illustration",
+              "description": "Basic networking overview"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 1. Network Types\n- **LAN (Local Area Network):** Covers a small geographic area.\n- **WAN (Wide Area Network):** Covers a large area like cities or countries.\n- **VPN (Virtual Private Network):** Securely connects remote networks."
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 2. Key Protocols\n- **TCP/IP:** Core protocol suite of the Internet.\n- **DNS:** Converts domain names to IP addresses.\n- **HTTP/HTTPS:** Protocols for web communication."
+            },
+            {
+              "image": "assets/images/blog/network-diagram.jpg",
+              "alt": "Basic network diagram",
+              "description": "Diagram showing routers, switches, and devices"
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "### 3. Network Devices\nCommon devices include routers, switches, hubs, and firewalls. Each has a specific function in routing, switching, or protecting data traffic."
+            }
+          ]
+        },
+        {
+          "blocks": [
+            {
+              "text": "Understanding these fundamentals prepares you for advanced topics like cloud networking, network security, and enterprise infrastructure. Additional resources like ",
+              "link": {
+                "href": "https://www.cisco.com/",
+                "text": "Cisco Networking Academy"
+              },
+              "text2": " can help you practice and learn in depth."
+            }
+          ]
+        }
+      ]
     }
   ],
   "categories": [
+    { "name": "GitHub", "count": 1 },
+    { "name": "Accounting", "count": 1 },
+    { "name": "Networking", "count": 1 },
     { "name": "Web Development", "count": 2 },
-    { "name": "Competitive Programming", "count": 1 },
     { "name": "Student Life", "count": 1 }
   ]
 }

@@ -79,6 +79,108 @@ const SingleBlog = () => {
     }
   };
 
+  // Render markdown-like text formatting
+  const renderText = (text) => {
+    if (!text) return null;
+
+    // Handle headings (###, ##, #)
+    if (text.startsWith("### ")) {
+      return (
+        <h4 className="text-xl font-bold text-[#002B48] mt-6 mb-4">
+          {text.replace("### ", "")}
+        </h4>
+      );
+    }
+    if (text.startsWith("## ")) {
+      return (
+        <h3 className="text-2xl font-bold text-[#002B48] mt-8 mb-4">
+          {text.replace("## ", "")}
+        </h3>
+      );
+    }
+    if (text.startsWith("# ")) {
+      return (
+        <h2 className="text-3xl font-bold text-[#002B48] mt-10 mb-6">
+          {text.replace("# ", "")}
+        </h2>
+      );
+    }
+
+    // Handle code blocks
+    if (text.startsWith("```") && text.endsWith("```")) {
+      const codeContent = text.replace(/```/g, "").trim();
+      return (
+        <pre className="bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto my-4 text-sm">
+          <code>{codeContent}</code>
+        </pre>
+      );
+    }
+
+    // Handle lists (lines starting with - or *)
+    if (text.includes("\n- ") || text.includes("\n* ")) {
+      const lines = text.split("\n");
+      return (
+        <ul className="list-disc list-inside my-4 space-y-2 text-[#002B48]/90">
+          {lines.map((line, index) => {
+            const listItem = line.replace(/^[-\*] /, "").trim();
+            return listItem ? <li key={index}>{listItem}</li> : null;
+          })}
+        </ul>
+      );
+    }
+
+    // Regular paragraph
+    return <p className="text-[#002B48]/90 leading-relaxed mb-4">{text}</p>;
+  };
+
+  // Render a single block
+  const renderBlock = (block, blockIndex) => {
+    return (
+      <div key={blockIndex} className="mb-6">
+        {/* Text content */}
+        {block.text && renderText(block.text)}
+
+        {/* Additional text after link */}
+        {block.text2 && (
+          <span className="text-[#002B48]/90">{block.text2}</span>
+        )}
+
+        {/* Link */}
+        {block.link && (
+          <a
+            href={block.link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#089BAB] hover:text-[#002B48] underline font-medium"
+          >
+            {block.link.text}
+          </a>
+        )}
+
+        {/* Image with description */}
+        {block.image && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="my-6 rounded-xl overflow-hidden shadow-lg"
+          >
+            <img
+              src={block.image.replace("assets/images", "/images")}
+              alt={block.alt || ""}
+              className="w-full h-auto object-cover"
+            />
+            {block.description && (
+              <p className="text-center text-sm text-[#002B48]/70 mt-2 italic">
+                {block.description}
+              </p>
+            )}
+          </motion.div>
+        )}
+      </div>
+    );
+  };
+
   if (loading)
     return (
       <div className="pt-24 pb-16 min-h-screen bg-gradient-to-b from-[#E1F5F6] to-white">
@@ -219,9 +321,18 @@ const SingleBlog = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="prose max-w-none prose-headings:text-[#002B48] prose-h2:text-2xl prose-h3:text-xl prose-p:text-[#002B48]/90 prose-a:text-[#089BAB] hover:prose-a:text-[#002B48] prose-strong:text-[#002B48] prose-blockquote:text-[#002B48]/80 prose-blockquote:border-l-[#089BAB] prose-blockquote:bg-[#E1F5F6]/50 prose-blockquote:py-2 prose-blockquote:px-4 prose-li:marker:text-[#089BAB] mb-12"
-          dangerouslySetInnerHTML={{ __html: post.content || post.excerpt }}
-        />
+          className="mb-12"
+        >
+          {post.sections &&
+            post.sections.map((section, sectionIndex) => (
+              <div key={sectionIndex} className="mb-8">
+                {section.blocks &&
+                  section.blocks.map((block, blockIndex) => (
+                    <div key={blockIndex}>{renderBlock(block, blockIndex)}</div>
+                  ))}
+              </div>
+            ))}
+        </motion.div>
 
         {/* Tags */}
         {post.tags && post.tags.length > 0 && (
@@ -242,6 +353,31 @@ const SingleBlog = () => {
                   className="bg-[#089BAB]/10 text-[#089BAB] px-4 py-2 rounded-lg text-sm font-medium"
                 >
                   {tag}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {/* Categories */}
+        {post.categories && post.categories.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.45 }}
+            className="mb-12"
+          >
+            <div className="flex items-center text-[#089BAB] gap-2 mb-4">
+              <FaTag />
+              <span className="font-medium">Categories:</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {post.categories.map((category, idx) => (
+                <span
+                  key={idx}
+                  className="bg-[#FF9801]/10 text-[#FF9801] px-4 py-2 rounded-lg text-sm font-medium"
+                >
+                  {category}
                 </span>
               ))}
             </div>
