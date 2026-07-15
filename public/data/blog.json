@@ -8,7 +8,7 @@
       "tags": ["GitHub", "Version Control", "Git"],
       "categories": ["GitHub", "Web Development"],
       "readTime": "10 min",
-      "image": "assets/images/blog/github-main.jpg",
+      "image": "/images/blog/github-main.jpg",
       "alt": "GitHub dashboard screenshot",
       "sections": [
         {
@@ -18,7 +18,7 @@
             },
             {
               "text": "In this guide, we'll cover the main concepts of GitHub and how to use them effectively.",
-              "image": "assets/images/blog/github-overview.jpg",
+              "image": "/images/blog/github-overview.jpg",
               "alt": "GitHub overview illustration",
               "description": "Understanding the GitHub interface and workflow"
             }
@@ -31,7 +31,7 @@
             },
             {
               "text": "```bash\ngit clone https://github.com/username/repo.git\n```",
-              "image": "assets/images/blog/github-clone.jpg",
+              "image": "/images/blog/github-clone.jpg",
               "alt": "GitHub clone command screenshot",
               "description": "Cloning a repository to your local machine"
             }
@@ -44,7 +44,7 @@
             },
             {
               "text": "```bash\ngit checkout -b feature-login\n```",
-              "image": "assets/images/blog/github-branch.jpg",
+              "image": "/images/blog/github-branch.jpg",
               "alt": "Creating a branch in GitHub",
               "description": "Branch creation allows parallel development"
             },
@@ -84,7 +84,7 @@
       "tags": ["Accounting", "Finance", "Student"],
       "categories": ["Accounting", "Student Life"],
       "readTime": "9 min",
-      "image": "assets/images/blog/accounting-main.jpg",
+      "image": "/images/blog/accounting-main.jpg",
       "alt": "Accounting ledger illustration",
       "sections": [
         {
@@ -94,7 +94,7 @@
             },
             {
               "text": "This guide will explain the basics of accounting in simple terms.",
-              "image": "assets/images/blog/accounting-overview.jpg",
+              "image": "/images/blog/accounting-overview.jpg",
               "alt": "Accounting overview illustration",
               "description": "Overview of accounting principles"
             }
@@ -106,7 +106,7 @@
               "text": "### 1. Key Accounting Concepts\n- **Assets:** Resources owned by a company or individual.\n- **Liabilities:** Obligations or debts.\n- **Equity:** Owner's interest in the business."
             },
             {
-              "image": "assets/images/blog/accounting-ledger.jpg",
+              "image": "/images/blog/accounting-ledger.jpg",
               "alt": "Ledger example",
               "description": "A basic ledger entry example"
             }
@@ -151,7 +151,7 @@
       "tags": ["Networking", "TCP/IP", "Infrastructure"],
       "categories": ["Networking", "Web Development"],
       "readTime": "11 min",
-      "image": "assets/images/blog/networking-main.jpg",
+      "image": "/images/blog/networking-main.jpg",
       "alt": "Network diagram illustration",
       "sections": [
         {
@@ -161,7 +161,7 @@
             },
             {
               "text": "We'll cover essential concepts, protocols, and tools for beginners.",
-              "image": "assets/images/blog/networking-overview.jpg",
+              "image": "/images/blog/networking-overview.jpg",
               "alt": "Networking overview illustration",
               "description": "Basic networking overview"
             }
@@ -180,7 +180,7 @@
               "text": "### 2. Key Protocols\n- **TCP/IP:** Core protocol suite of the Internet.\n- **DNS:** Converts domain names to IP addresses.\n- **HTTP/HTTPS:** Protocols for web communication."
             },
             {
-              "image": "assets/images/blog/network-diagram.jpg",
+              "image": "/images/blog/network-diagram.jpg",
               "alt": "Basic network diagram",
               "description": "Diagram showing routers, switches, and devices"
             }

@@ -166,7 +166,7 @@ const SingleBlog = () => {
             className="my-6 rounded-xl overflow-hidden shadow-lg"
           >
             <img
-              src={block.image.replace("assets/images", "/images")}
+              src={block.image}
               alt={block.alt || ""}
               className="w-full h-auto object-cover"
             />
@@ -308,7 +308,7 @@ const SingleBlog = () => {
             className="mb-10 rounded-xl overflow-hidden shadow-lg"
           >
             <img
-              src={post.image.replace("assets/images", "/images")}
+              src={post.image}
               alt={post.alt || post.title}
               className="w-full h-auto object-cover"
             />

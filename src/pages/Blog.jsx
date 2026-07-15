@@ -196,7 +196,7 @@ const Blog = () => {
                 >
                   <div className="h-48 overflow-hidden relative">
                     <img
-                      src={post.image.replace("assets/images", "/images")}
+                      src={post.image}
                       alt={post.alt || post.title}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />

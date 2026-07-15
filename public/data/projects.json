@@ -1,5 +1,6 @@
 [
   {
+    "id": "cinematch",
     "title": "CineMatch - Intelligent Movie Recommendation System",
 
     "tagline": "Hybrid KNN-powered movie recommendations using FastAPI and TF-IDF",
@@ -35,24 +36,24 @@
     "github": "https://github.com/Asadullah-Imran/Movie_recomendation_applying_KNN",
     "demo": "https://asadullah-imran.github.io/Movie_recomendation_applying_KNN",
     "featuredImage": {
-      "src": "images/projects/cinematch/ss_recomendation.png",
+      "src": "/images/projects/cinematch/ss_recomendation.png",
       "alt": "Featured screenshot of CineMatch movie recommendation project"
     },
     "screenshots": [
       {
-        "src": "images/projects/cinematch/ss_home.png",
+        "src": "/images/projects/cinematch/ss_home.png",
         "caption": "CineMatch home page with trending and recommended movies"
       },
       {
-        "src": "images/projects/cinematch/ss_genre.png",
+        "src": "/images/projects/cinematch/ss_genre.png",
         "caption": "Genre browsing with dynamically loaded movie lists"
       },
       {
-        "src": "images/projects/cinematch/ss_movie_details.png",
+        "src": "/images/projects/cinematch/ss_movie_details.png",
         "caption": "Detailed movie information with cast and trailer"
       },
       {
-        "src": "images/projects/cinematch/ss_recomendation.png",
+        "src": "/images/projects/cinematch/ss_recomendation.png",
         "caption": "Recommended movies based on hybrid KNN model"
       }
     ],
@@ -61,6 +62,7 @@
     "date": "2025-07-15"
   },
   {
+    "id": "monster-munchkins",
     "title": "Monster Munchkins — Java RPG Adventure Game",
     "tagline": "JavaFX-powered tile-based RPG with real-time chat, persistent world, and championed in AOOP Lab",
     "description": "Monster Munchkins is a Java-based, tile-oriented adventure game with RPG elements, real-time global chat, and persistent user progress. Built for an Advanced OOP lab, it features a rich world, asset-driven environments, and a MySQL-backed database for user and world data. Players explore, battle monsters, interact with NPCs, collect items, and communicate globally—all in a custom JavaFX UI.",
@@ -103,60 +105,60 @@
     "github": "https://github.com/Asadullah-Imran/MonsterMunchkins",
     "demo": "https://youtu.be/zc406nTytZ4?si=YOuMyCu4L_-P7Csz",
     "featuredImage": {
-      "src": "images/projects/monsterMunchkins/ss_boss_slime.png",
+      "src": "/images/projects/monsterMunchkins/ss_boss_slime.png",
       "alt": "Monster Munchkins - Mother Slime Boss Battle"
     },
     "screenshots": [
       {
-        "src": "images/projects/monsterMunchkins/ss_devil_place_1.png",
+        "src": "/images/projects/monsterMunchkins/ss_devil_place_1.png",
         "caption": "Devil Island - Entrance"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_devil_place_2.png",
+        "src": "/images/projects/monsterMunchkins/ss_devil_place_2.png",
         "caption": "Devil Island - Deep Area"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_boss_slime.png",
+        "src": "/images/projects/monsterMunchkins/ss_boss_slime.png",
         "caption": "Mother Slime Boss Battle"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_ship_to_go_island.png",
+        "src": "/images/projects/monsterMunchkins/ss_ship_to_go_island.png",
         "caption": "Sailing to the Far Island"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_chat_to_other_hunter.png",
+        "src": "/images/projects/monsterMunchkins/ss_chat_to_other_hunter.png",
         "caption": "Chatting with Other Hunters"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_rock_break.png",
+        "src": "/images/projects/monsterMunchkins/ss_rock_break.png",
         "caption": "Breaking Rocks to Clear Path"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_got_treasure.png",
+        "src": "/images/projects/monsterMunchkins/ss_got_treasure.png",
         "caption": "Found a Treasure!"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_wood_cut_1.png",
+        "src": "/images/projects/monsterMunchkins/ss_wood_cut_1.png",
         "caption": "Cutting Down Trees"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_conversation.png",
+        "src": "/images/projects/monsterMunchkins/ss_conversation.png",
         "caption": "NPC Conversation"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_shop_1.png",
+        "src": "/images/projects/monsterMunchkins/ss_shop_1.png",
         "caption": "Tool Shop"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_shop_2.png",
+        "src": "/images/projects/monsterMunchkins/ss_shop_2.png",
         "caption": "Potion Shop"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_hospital.png",
+        "src": "/images/projects/monsterMunchkins/ss_hospital.png",
         "caption": "Medical Shop"
       },
       {
-        "src": "images/projects/monsterMunchkins/ss_player_house_1.png",
+        "src": "/images/projects/monsterMunchkins/ss_player_house_1.png",
         "caption": "Player's House"
       }
     ],
@@ -194,6 +196,7 @@
     ]
   },
   {
+    "id": "exam-routine-generator",
     "title": "Exam Routine Generator",
     "tagline": "Frontend-only app for generating personalized exam schedules and room numbers for UIU students.",
     "description": "A browser-based tool that allows United International University students to generate their personalized exam schedules and instantly find their exam room numbers. No backend required—everything runs in the browser for maximum reliability during high-traffic exam periods.",
@@ -228,20 +231,20 @@
     "github": "https://github.com/Asadullah-Imran/ExamRoutineGenerator",
     "demo": "https://examroutine.vercel.app/",
     "featuredImage": {
-      "src": "images/projects/ExamRoutineGenerator/ss_start.png",
+      "src": "/images/projects/ExamRoutineGenerator/ss_start.png",
       "alt": "Exam Routine Generator - App Start Screen"
     },
     "screenshots": [
       {
-        "src": "images/projects/ExamRoutineGenerator/ss_start.png",
+        "src": "/images/projects/ExamRoutineGenerator/ss_start.png",
         "caption": "App Start Screen"
       },
       {
-        "src": "images/projects/ExamRoutineGenerator/ss_adding_routine.png",
+        "src": "/images/projects/ExamRoutineGenerator/ss_adding_routine.png",
         "caption": "Adding Courses and Sections"
       },
       {
-        "src": "images/projects/ExamRoutineGenerator/ss_generated_routine.png",
+        "src": "/images/projects/ExamRoutineGenerator/ss_generated_routine.png",
         "caption": "Generated Routine Table"
       }
     ],
@@ -258,6 +261,7 @@
     ]
   },
   {
+    "id": "likhalikhi",
     "title": "likhalikhi - Modern Full-Stack Blog Application",
     "tagline": "A modern, full-stack blog app with React frontend, Node.js/Express backend, and MongoDB.",
     "description": "BlogSphere is a platform for users to share thoughts, ideas, and stories. It supports user authentication, post creation/editing, comments, reactions, and profile management. The app is built with scalability and modern best practices in mind.",
@@ -301,28 +305,28 @@
     "github": "https://github.com/Asadullah-Imran/likhalikhi",
     "demo": "https://likhalikhi.vercel.app/",
     "featuredImage": {
-      "src": "images/projects/likhalikhi/ss_home_page.png",
+      "src": "/images/projects/likhalikhi/ss_home_page.png",
       "alt": "BlogSphere - Home Page"
     },
     "screenshots": [
       {
-        "src": "images/projects/likhalikhi/ss_home_page.png",
+        "src": "/images/projects/likhalikhi/ss_home_page.png",
         "caption": "Home Page"
       },
       {
-        "src": "images/projects/likhalikhi/ss_all_blog_post.png",
+        "src": "/images/projects/likhalikhi/ss_all_blog_post.png",
         "caption": "All Blog Posts"
       },
       {
-        "src": "images/projects/likhalikhi/ss_write_blog.png",
+        "src": "/images/projects/likhalikhi/ss_write_blog.png",
         "caption": "Write Blog Page"
       },
       {
-        "src": "images/projects/likhalikhi/ss_profile_page.png",
+        "src": "/images/projects/likhalikhi/ss_profile_page.png",
         "caption": "Profile Page"
       },
       {
-        "src": "images/projects/likhalikhi/ss_login_page.png",
+        "src": "/images/projects/likhalikhi/ss_login_page.png",
         "caption": "Login Page"
       }
     ],

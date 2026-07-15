@@ -100,7 +100,7 @@ const About = () => {
                 <div className="profile-frame relative w-64 h-64">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#089BAB] to-[#009C9C] rounded-full animate-pulse border-4 border-[#089BAB]"></div>
                   <img
-                    src={personal.image.replace("assets/images", "/images")}
+                    src={personal.image}
                     alt={personal.name}
                     className="profile-img relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
                   />
@@ -344,7 +344,7 @@ const About = () => {
                 >
                   <div className="h-48 overflow-hidden">
                     <img
-                      src={ach.image.replace("assets/images", "/images")}
+                      src={ach.image}
                       alt={ach.title}
                       className="w-full h-full object-cover"
                     />
@@ -406,7 +406,7 @@ const About = () => {
                   <div className="flex items-start gap-4">
                     {cert.badge ? (
                       <img
-                        src={cert.badge.replace("assets/images", "/images")}
+                        src={cert.badge}
                         alt={cert.alt || cert.title}
                         className="w-16 h-16 object-contain"
                       />
@@ -503,7 +503,7 @@ const About = () => {
                   >
                     {aff.image ? (
                       <img
-                        src={aff.image.replace("assets/images", "/images")}
+                        src={aff.image}
                         alt={aff.alt || aff.organization}
                         className="w-12 h-12 object-cover rounded-full"
                       />

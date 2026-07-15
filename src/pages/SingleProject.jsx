@@ -15,10 +15,18 @@ import { Link, useParams } from "react-router-dom";
 const SingleProject = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
+  const [personal, setPersonal] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentImage, setCurrentImage] = useState(0);
   const galleryRef = useRef(null);
+
+  useEffect(() => {
+    fetch("/data/personal.json")
+      .then((res) => res.json())
+      .then((data) => setPersonal(data))
+      .catch((err) => console.error("Failed to fetch personal data", err));
+  }, []);
 
   useEffect(() => {
     fetch("/data/projects.json")
@@ -27,9 +35,11 @@ const SingleProject = () => {
         return res.json();
       })
       .then((data) => {
-        const idx = Number(id);
-        const found = Array.isArray(data) ? data[idx] : null;
-        setProject(found || null);
+        const found = Array.isArray(data)
+          ? data.find((p) => String(p.id) === String(id))
+          : null;
+        if (!found) throw new Error("Project not found");
+        setProject(found);
         setLoading(false);
       })
       .catch((err) => {
@@ -218,7 +228,7 @@ const SingleProject = () => {
             className="mb-10 rounded-xl overflow-hidden shadow-lg"
           >
             <img
-              src={`/${project.featuredImage.src}`}
+              src={project.featuredImage.src}
               alt={project.featuredImage.alt || project.title}
               className="w-full h-auto object-cover"
             />
@@ -441,7 +451,7 @@ const SingleProject = () => {
             <div className="relative rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-96">
                 <img
-                  src={`/${project.screenshots[currentImage].src}`}
+                  src={project.screenshots[currentImage].src}
                   alt={
                     project.screenshots[currentImage].caption || project.title
                   }
@@ -488,7 +498,7 @@ const SingleProject = () => {
                   }`}
                 >
                   <img
-                    src={`/${ss.src}`}
+                    src={ss.src}
                     alt={ss.caption || `Screenshot ${idx + 1}`}
                     className="w-full h-full object-cover"
                   />
@@ -642,12 +652,12 @@ const SingleProject = () => {
             opportunities. Let's create something amazing together!
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link
-              to="/contact" // Assuming you have a contact page
+            <a
+              href={`mailto:${personal?.email || "asadullahimran19@gmail.com"}`}
               className="bg-white text-[#089BAB] px-6 py-3 rounded-lg font-medium hover:bg-[#002B48] hover:text-white transition"
             >
               Contact Me
-            </Link>
+            </a>
             <Link
               to="/projects"
               className="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-[#089BAB] transition"

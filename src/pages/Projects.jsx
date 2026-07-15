@@ -47,15 +47,17 @@ const Projects = () => {
         setProjects(Array.isArray(data) ? data : []);
         // Extract unique categories
         const cats = [
-          ...new Set([
-            ...data
-              .map((p) =>
-                p.category && typeof p.category === "string"
-                  ? p.category.trim()
-                  : null
+          ...new Set(
+            (data || [])
+              .flatMap((p) =>
+                Array.isArray(p.category)
+                  ? p.category.map((c) => c.trim())
+                  : p.category && typeof p.category === "string"
+                  ? [p.category.trim()]
+                  : []
               )
-              .filter(Boolean),
-          ]),
+              .filter(Boolean)
+          ),
         ];
         setCategories(["All", ...cats]);
         setLoading(false);
@@ -69,11 +71,12 @@ const Projects = () => {
   useEffect(() => {
     let filteredProjects = projects;
     if (activeCategory !== "All") {
-      filteredProjects = projects.filter(
-        (p) =>
-          p.category &&
-          typeof p.category === "string" &&
-          p.category.trim() === activeCategory
+      filteredProjects = projects.filter((p) =>
+        Array.isArray(p.category)
+          ? p.category.map((c) => c.trim()).includes(activeCategory)
+          : p.category && typeof p.category === "string"
+          ? p.category.trim() === activeCategory
+          : false
       );
     }
     setFiltered(filteredProjects);
@@ -192,9 +195,9 @@ const Projects = () => {
 
           {!loading &&
             !error &&
-            filtered.map((project, idx) => (
+            filtered.map((project) => (
               <motion.div
-                key={idx}
+                key={project.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden border border-[#E1F5F6] hover:shadow-xl transition-all duration-300 flex flex-col"
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
@@ -202,10 +205,7 @@ const Projects = () => {
                 <div className="h-48 overflow-hidden relative group">
                   {project.featuredImage?.src ? (
                     <img
-                      src={project.featuredImage.src.replace(
-                        "assets/images",
-                        "/images"
-                      )}
+                      src={project.featuredImage.src}
                       alt={project.featuredImage?.alt || project.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -310,7 +310,7 @@ const Projects = () => {
 
                   <div className="flex justify-between items-center mt-auto pt-4 border-t border-[#E1F5F6]">
                     <Link
-                      to={`/projects/${idx}`}
+                      to={`/projects/${project.id}`}
                       className="w-full block bg-[#089BAB] hover:bg-[#002B48] text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl text-center flex items-center justify-center gap-2 group"
                     >
                       View Details

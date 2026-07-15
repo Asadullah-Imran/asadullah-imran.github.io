@@ -38,6 +38,7 @@ const Navbar = () => {
             { path: "/about", label: "About" },
             { path: "/projects", label: "Projects" },
             { path: "/blog", label: "Blog" },
+            { path: "/resume", label: "Resume" },
           ].map((item) => (
             <Link
               key={item.path}
@@ -88,6 +89,7 @@ const Navbar = () => {
               { path: "/about", label: "About" },
               { path: "/projects", label: "Projects" },
               { path: "/blog", label: "Blog" },
+              { path: "/resume", label: "Resume" },
             ].map((item) => (
               <Link
                 key={item.path}

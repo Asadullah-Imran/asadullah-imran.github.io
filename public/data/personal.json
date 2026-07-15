@@ -6,7 +6,7 @@
   "email": "asadullahimran19@gmail.com",
   "phone": "+8801633-356249",
   "about": "Final-year Computer Science student at United International University (CGPA 3.95). Passionate MERN Stack developer with strong problem-solving skills. Experienced in building modern full-stack applications and participating in competitive programming contests. Proficient in JavaScript, React, Node.js, and software design principles.",
-  "image": "images/profile/b.jpg",
+  "image": "/images/profile/b.jpg",
   "social": [
     {
       "name": "GitHub",

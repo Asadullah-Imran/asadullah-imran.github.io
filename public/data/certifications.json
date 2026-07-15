@@ -3,7 +3,7 @@
     "title": "Advanced React",
     "issuer": "Meta via Coursera",
     "date": "June 2023",
-    "badge": "assets/images/certifications/advanced-react.jpg",
+    "badge": "/images/certifications/advanced-react.jpg",
     "alt": "Meta Advanced React certification badge",
     "credentials": "Credential ID XYZ123",
     "url": "https://coursera.org/verify/XYZ123"
@@ -18,7 +18,7 @@
     "title": "Programming with JavaScript",
     "issuer": "Meta via Coursera",
     "date": "May 2023",
-    "badge": "assets/images/certifications/js-cert.jpg",
+    "badge": "/images/certifications/js-cert.jpg",
     "alt": "Meta Programming with JavaScript certification badge",
     "url": "https://coursera.org/verify/ABC456"
   },

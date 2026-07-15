@@ -150,10 +150,7 @@ const Home = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-r from-[#089BAB] to-[#002B48] opacity-20 rounded-full"></div>
               <img
-                src={
-                  personal?.image?.replace("assets/images", "/images") ||
-                  "/images/profile/b.jpg"
-                }
+                src={personal?.image || "/images/profile/b.jpg"}
                 alt={personal?.name || "Asadullah Imran"}
                 className="relative w-full h-full object-cover z-10"
               />
@@ -331,10 +328,7 @@ const Home = () => {
                   <div className="h-48 overflow-hidden relative">
                     {project.featuredImage?.src ? (
                       <img
-                        src={project.featuredImage.src.replace(
-                          "assets/images",
-                          "/images"
-                        )}
+                        src={project.featuredImage.src}
                         alt={project.featuredImage.alt || project.title}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                       />
@@ -399,7 +393,7 @@ const Home = () => {
 
                     <div className="flex justify-between items-center">
                       <Link
-                        to={`/projects/${idx}`}
+                        to={`/projects/${project.id}`}
                         className="inline-flex items-center text-[#089BAB] hover:text-[#002B48] font-medium group"
                       >
                         View Details
