@@ -4,12 +4,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
-import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
-import SingleBlog from "./pages/SingleBlog";
 import SingleProject from "./pages/SingleProject";
 
 const App = () => (
@@ -22,9 +19,6 @@ const App = () => (
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<SingleProject />} />
         <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<SingleBlog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
