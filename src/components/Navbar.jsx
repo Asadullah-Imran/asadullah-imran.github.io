@@ -32,11 +32,12 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex items-center space-x-6">
           {[
             { path: "/", label: "Home" },
-            { path: "/about", label: "About" },
+            { path: "/research", label: "Research" },
             { path: "/projects", label: "Projects" },
+            { path: "/about", label: "About" },
           ].map((item) => (
             <Link
               key={item.path}
@@ -50,6 +51,13 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
+          <a
+            href="/docs/Asadullah_Imran_CV.pdf"
+            download
+            className="text-xs uppercase tracking-wider font-bold bg-[#089BAB]/10 text-[#089BAB] hover:bg-[#089BAB] hover:text-white px-3.5 py-1.5 rounded-full border border-[#089BAB]/30 transition-all"
+          >
+            CV
+          </a>
         </div>
 
         {/* Hamburger Button */}
@@ -84,8 +92,9 @@ const Navbar = () => {
           <div className="container mx-auto px-4 pt-24 flex flex-col items-center space-y-8">
             {[
               { path: "/", label: "Home" },
-              { path: "/about", label: "About" },
+              { path: "/research", label: "Research" },
               { path: "/projects", label: "Projects" },
+              { path: "/about", label: "About" },
             ].map((item) => (
               <Link
                 key={item.path}
@@ -100,6 +109,14 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <a
+              href="/docs/Asadullah_Imran_CV.pdf"
+              download
+              className="text-lg font-bold bg-[#089BAB] text-white px-6 py-2.5 rounded-full shadow-md"
+              onClick={() => setMenuOpen(false)}
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>

@@ -1,12 +1,62 @@
 {
   "name": "Asadullah Imran",
-  "title": "MERN Stack Developer | CSE Student",
-  "tagline": "Building scalable digital solutions with JavaScript ecosystems",
+  "title": "Aspiring Researcher · AI · Machine Learning · Computational Biology",
+  "tagline": "Developing deep learning and computational biology approaches to understand complex cellular systems",
+  "institution": "United International University",
+  "department": "Department of Computer Science and Engineering",
+  "major": "Data Science",
+  "cgpa": "3.97",
+  "cgpaScale": "4.00",
+  "expectedGraduation": "February 2027",
   "location": "Dhaka, Bangladesh",
   "email": "asadullahimran19@gmail.com",
   "phone": "+8801633-356249",
-  "about": "Final-year Computer Science student at United International University (CGPA 3.95). Passionate MERN Stack developer with strong problem-solving skills. Experienced in building modern full-stack applications and participating in competitive programming contests. Proficient in JavaScript, React, Node.js, and software design principles.",
-  "image": "/images/profile/b.jpg",
+  "about": "I am a Computer Science and Engineering student at United International University, Bangladesh, with a major in Data Science. My interests lie at the intersection of Artificial Intelligence, Deep Learning, and Computational Biology. I am particularly interested in developing machine learning approaches that can address complex scientific problems and extract meaningful insights from high-dimensional biological data. Currently, I am working on a research project focused on deep learning for spatial multi-omics cell clustering, exploring representation learning and computational approaches for understanding complex cellular environments. Throughout my undergraduate journey, I have maintained a CGPA of 3.97/4.00 and received multiple academic merit scholarships for outstanding academic performance. Beyond coursework, I am continuously developing my research capabilities through experimentation, technical learning, scientific literature, and interdisciplinary exploration. My long-term goal is to pursue graduate research and contribute to the development of AI-driven methods that advance scientific discovery.",
+  "image": "/images/profile/b.png",
+  "stats": [
+    {
+      "value": "3.97",
+      "label": "Academic CGPA",
+      "subtext": "Out of 4.00 Scale"
+    },
+    {
+      "value": "6×",
+      "label": "100% Scholarships",
+      "subtext": "Top 2% of UIU CSE"
+    },
+    {
+      "value": "9×",
+      "label": "Merit Awards",
+      "subtext": "Consistent Excellence"
+    },
+    {
+      "value": "FYDP",
+      "label": "Active Research",
+      "subtext": "Spatial Multi-omics"
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Artificial Intelligence & Deep Learning",
+      "description": "Exploring deep neural architectures, representation learning, and intelligent computational approaches for complex data."
+    },
+    {
+      "title": "Computational Biology & Multi-omics",
+      "description": "Integrating high-dimensional biological modalities to decipher cellular microenvironments and tissue architecture."
+    },
+    {
+      "title": "Data Science & Machine Learning",
+      "description": "Building rigorous foundations in statistical learning, high-dimensional data analysis, and reproducible experimentation."
+    },
+    {
+      "title": "Scientific Research",
+      "description": "Formulating research questions, conducting systematic literature reviews, designing computational experiments, and academic writing."
+    },
+    {
+      "title": "Teaching & Knowledge Sharing",
+      "description": "Communicating technical concepts, mentoring undergraduate students as a University Assistant, and peer academic advising."
+    }
+  ],
   "social": [
     {
       "name": "GitHub",
@@ -19,14 +69,28 @@
       "icon": "fab fa-linkedin"
     },
     {
+      "name": "Email",
+      "url": "mailto:asadullahimran19@gmail.com",
+      "icon": "fas fa-envelope"
+    },
+    {
       "name": "LeetCode",
       "url": "https://leetcode.com/u/asadullahimran19/",
       "icon": "fas fa-code"
     }
   ],
   "languages": [
-    { "name": "Bangla", "level": "Native" },
-    { "name": "English", "level": "Fluent" },
-    { "name": "Hindi", "level": "Conversational" }
+    {
+      "name": "Bangla",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Fluent / Professional"
+    },
+    {
+      "name": "Hindi",
+      "level": "Conversational"
+    }
   ]
 }

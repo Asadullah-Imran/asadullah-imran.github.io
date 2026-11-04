@@ -1,0 +1,53 @@
+[
+  {
+    "id": "uga-uiu",
+    "role": "Undergraduate Assistant (UGA)",
+    "organization": "United International University",
+    "employmentType": "Part-time",
+    "period": "Aug 2025 - Present",
+    "duration": "1 yr 4 mos",
+    "location": "Dhaka, Bangladesh",
+    "image": "/images/experience/University UGA room Portrait.jpg",
+    "alt": "Asadullah Imran at UIU UGA Student Counseling and Collaboration Space",
+    "description": "Selected to support faculty and mentor undergraduate students across core Computer Science and Engineering curriculum laboratory courses.",
+    "responsibilities": [
+      "Assisted instructors in conducting lab sessions for undergraduate CSE courses (Programming, Data Structures, Algorithms, OS, Database, etc.).",
+      "Helped students debug code, grasp abstract computer science concepts, and complete rigorous lab tasks.",
+      "Evaluated lab assignments, quizzes, and course project submissions with detailed actionable feedback.",
+      "Supported faculty with classroom management, lab environment setup, and technical troubleshooting.",
+      "Provided one-on-one academic support to struggling students through scheduled counseling hours."
+    ],
+    "highlights": [
+      "Active contributor at the UGA Student Counseling & Collaboration Space, fostering peer learning, knowledge exchange, and academic mentorship."
+    ],
+    "skills": ["Academic Advising", "Pedagogical Mentorship", "Data Structures & Algorithms", "Code Debugging", "Student Counseling"]
+  },
+  {
+    "id": "uiu-computer-club",
+    "role": "Associate - Development Wing",
+    "organization": "UIU Computer Club",
+    "employmentType": "Club Leadership",
+    "period": "Jun 2023 - Present",
+    "duration": "3 yrs 6 mos",
+    "location": "Dhaka, Bangladesh",
+    "image": "/images/experience/uiuCCL.jpg",
+    "alt": "UIU Computer Club Development Wing",
+    "description": "Promoted to Associate in the Development Wing, leading technical web initiatives and mentoring peers.",
+    "timeline": [
+      {
+        "role": "Associate - Development Wing",
+        "period": "Dec 2024 - Nov 2026",
+        "duration": "2 yrs",
+        "details": "Promoted to Associate in the Development Wing to lead frontend and full-stack projects, design architectural solutions, and support university hackathons and events."
+      },
+      {
+        "role": "Member",
+        "period": "Jun 2023 - Dec 2024",
+        "duration": "1 yr 7 mos",
+        "details": "Active club member participating in competitive programming events, technical workshops, and peer community projects."
+      }
+    ],
+    "skills": ["React.js", "Node.js", "JavaScript", "Team Leadership", "Community Mentorship"]
+  }
+]
+

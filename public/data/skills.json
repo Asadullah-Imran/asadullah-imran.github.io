@@ -1,49 +1,65 @@
 {
-  "programming": [
-    { "name": "JavaScript", "level": 90 },
-    { "name": "Java", "level": 85 },
-    { "name": "Python", "level": 80 },
-    { "name": "C", "level": 75 },
-    { "name": "SQL", "level": 75 }
-  ],
-  "web": [
-    { "name": "HTML/CSS", "level": 95 },
-    { "name": "React", "level": 85 },
-    { "name": "Node.js", "level": 80 },
-    { "name": "Express", "level": 80 },
-    { "name": "FastAPI", "level": 70 },
-    { "name": "TMDB API", "level": 70 }
-  ],
-  "tools": [
-    "Git",
-    "GitHub",
-    "VS Code",
-    "Postman",
-    "Figma",
-    "Adobe Photoshop",
-    "Maven",
-    "MySQL",
-    "JDBC",
-    "FXML",
-    "Socket Programming"
-  ],
-  "concepts": [
-    "Data Structures",
-    "Algorithms",
-    "Object-Oriented Programming (OOP)",
-    "Agile Methodologies",
-    "Responsive Design",
-    "REST APIs",
-    "Version Control",
-    "KNN",
-    "TF-IDF",
-    "Content-based Filtering",
-    "Collaborative Filtering",
-    "Hybrid Recommendation",
-    "Database Schema Design",
-    "Real-time Networking",
-    "Caching",
-    "API Rate Limiting",
-    "Team Collaboration"
+  "categories": [
+    {
+      "name": "Artificial Intelligence & Deep Learning",
+      "icon": "FaBrain",
+      "description": "Neural architectures, representation learning, and unsupervised modeling.",
+      "skills": [
+        "PyTorch",
+        "TensorFlow",
+        "Representation Learning",
+        "Unsupervised Clustering",
+        "Graph Neural Networks (GNN)",
+        "Deep Autoencoders",
+        "Transfer Learning",
+        "Feature Embedding"
+      ]
+    },
+    {
+      "name": "Computational Biology & Multi-omics",
+      "icon": "FaDna",
+      "description": "High-dimensional biological data integration and cellular domain analysis.",
+      "skills": [
+        "Spatial Multi-omics",
+        "Spatial Transcriptomics",
+        "Single-Cell Analysis",
+        "Scanpy Pipeline",
+        "Cellular Niche Identification",
+        "Cross-Modality Data Integration",
+        "Biological Pattern Discovery"
+      ]
+    },
+    {
+      "name": "Data Science & Statistical Learning",
+      "icon": "FaChartLine",
+      "description": "Exploratory analysis, mathematical foundations, and dimensionality reduction.",
+      "skills": [
+        "NumPy",
+        "Pandas",
+        "Scikit-learn",
+        "Statistical Modeling",
+        "UMAP & t-SNE",
+        "Principal Component Analysis (PCA)",
+        "Hypothesis Testing",
+        "Data Preprocessing & Normalization"
+      ]
+    },
+    {
+      "name": "Programming Languages & Scientific Tooling",
+      "icon": "FaTerminal",
+      "description": "Algorithmic coding, workflow automation, and reproducible research environments.",
+      "skills": [
+        "Python",
+        "C / C++",
+        "Java",
+        "SQL",
+        "JavaScript",
+        "Git & GitHub",
+        "Linux / Shell Scripting",
+        "LaTeX (Scientific Typesetting)",
+        "FastAPI",
+        "React.js"
+      ]
+    }
   ]
 }

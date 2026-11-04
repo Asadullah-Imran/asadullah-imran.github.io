@@ -2,24 +2,51 @@
   {
     "institution": "United International University",
     "degree": "BSc in Computer Science and Engineering",
-    "period": "2021 - 2026 (Expected)",
-    "cgpa": "3.95",
+    "major": "Data Science",
+    "period": "2021 - Feb 2027 (Expected)",
+    "cgpa": "3.97",
+    "cgpaScale": "4.00",
+    "location": "Dhaka, Bangladesh",
+    "standing": "Top 2% of UIU CSE Department",
+    "scholarships": [
+      {
+        "type": "100% Full Tuition Scholarship",
+        "count": "6×",
+        "criteria": "Awarded for securing top academic positions (Top 2%) in UIU CSE Department."
+      },
+      {
+        "type": "50% Tuition Scholarship",
+        "count": "2×",
+        "criteria": "Awarded based on academic merit."
+      },
+      {
+        "type": "25% Tuition Scholarship",
+        "count": "1×",
+        "criteria": "Awarded based on academic merit."
+      }
+    ],
     "highlights": [
-      "Relevant Courses: Data Structures, Algorithms, Web Development, Database Systems",
+      "Major in Data Science: Machine Learning, Deep Learning, Statistical Data Analysis, Artificial Intelligence",
+      "Core Foundations: Data Structures, Algorithms, Operating Systems, Database Management Systems",
+      "Undergraduate Assistant (UGA) for lab courses and student counseling",
       "Champion, Advanced OOP Lab Project (Spring 2024)",
       "Top Performer, University Innovation Hub Program (UIHP)"
     ]
   },
   {
     "institution": "Barishal Govt College",
-    "degree": "HSC (Science)",
+    "degree": "Higher Secondary Certificate (HSC) - Science",
     "period": "2018 - 2019",
-    "gpa": "3.92"
+    "gpa": "3.92",
+    "gpaScale": "5.00",
+    "location": "Barishal, Bangladesh"
   },
   {
     "institution": "Udayan Secondary High School",
-    "degree": "SSC (Science)",
+    "degree": "Secondary School Certificate (SSC) - Science",
     "period": "2016 - 2017",
-    "gpa": "4.68"
+    "gpa": "4.68",
+    "gpaScale": "5.00",
+    "location": "Barishal, Bangladesh"
   }
 ]

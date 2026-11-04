@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Research from "./pages/Research";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import SingleProject from "./pages/SingleProject";
@@ -16,6 +17,7 @@ const App = () => (
     <main className="min-h-screen">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/research" element={<Research />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<SingleProject />} />
         <Route path="/about" element={<About />} />

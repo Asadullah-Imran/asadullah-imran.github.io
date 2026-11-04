@@ -1,0 +1,44 @@
+[
+  {
+    "id": "spatial-multiomics-clustering",
+    "title": "A Deep Learning Approach for Spatial Multi-omics Cell Clustering",
+    "category": "Computational Biology & Deep Learning",
+    "role": "Lead Student Researcher (Final Year Design Project)",
+    "institution": "United International University",
+    "location": "Dhaka, Bangladesh",
+    "period": "2025 - Present",
+    "status": "Active Research / Experiments in Progress",
+    "tagline": "Unsupervised representation learning for multi-modal biological data and cellular niche identification",
+    "summary": "Focuses on applying deep learning architectures to spatial multi-omics data to decipher complex cellular microenvironments. By bridging artificial intelligence and computational biology, this work explores how multi-modal biological data can be integrated into low-dimensional latent representations for accurate, unsupervised cell clustering and spatial domain identification.",
+    "researchQuestions": [
+      "How can diverse biological modalities (e.g., spatial transcriptomics and proteomics) be effectively fused without losing spatial context?",
+      "Can deep unsupervised representation learning disentangle batch effects while preserving biologically meaningful cellular heterogeneity?",
+      "How can learned spatial embeddings improve the identification of rare cellular niches and tissue architectural boundaries?"
+    ],
+    "methodology": [
+      "Multi-modal biological data preprocessing, normalization, and quality control.",
+      "Designing deep latent representation learning frameworks (Autoencoders / Graph Neural Networks) that capture spatial coordinate topologies alongside molecular abundance.",
+      "Unsupervised clustering algorithms evaluated across benchmark spatial multi-omics datasets.",
+      "Biological validation via marker gene expression analysis and spatial domain consistency."
+    ],
+    "keywords": [
+      "Spatial Multi-omics",
+      "Deep Learning",
+      "Representation Learning",
+      "Unsupervised Cell Clustering",
+      "Spatial Transcriptomics",
+      "Cellular Microenvironments"
+    ],
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "Scikit-learn",
+      "Scanpy",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn"
+    ]
+  }
+]
+

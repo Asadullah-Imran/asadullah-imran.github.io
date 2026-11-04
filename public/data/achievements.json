@@ -1,23 +1,40 @@
 [
   {
+    "title": "6× 100% Full Tuition Academic Merit Scholarship",
+    "organization": "United International University",
+    "year": "2021 - Present",
+    "description": "Awarded for securing top 2% academic ranking in the UIU CSE Department across consecutive trimesters, maintaining a cumulative CGPA of 3.97/4.00.",
+    "badge": "Top 2% Departmental Honor"
+  },
+  {
+    "title": "3× Academic Merit Scholarships (50% & 25%)",
+    "organization": "United International University",
+    "year": "2021 - 2023",
+    "description": "Recognized for continuous academic excellence across undergraduate trimesters.",
+    "badge": "Merit Scholar"
+  },
+  {
     "title": "AOOP Lab Course Champion",
     "organization": "United International University",
     "year": "2024",
-    "description": "Awarded for best project in Advanced Object-Oriented Programming course using Java and Swing.",
-    "image": "/images/awards/a.jpg"
+    "description": "Awarded for best software architecture and implementation in Advanced Object-Oriented Programming course using Java and Swing.",
+    "image": "/images/awards/a.jpg",
+    "badge": "1st Place Course Champion"
   },
   {
     "title": "UIHP Position Holder",
     "organization": "University Innovation Hub Program",
     "year": "2024",
-    "description": "Recognized for innovation and teamwork as part of the 'In|turn' team during UIU's innovation challenge.",
-    "image": "/images/awards/b.jpg"
+    "description": "Recognized for technical innovation and teamwork as part of the 'In|turn' project during UIU's university-wide innovation challenge.",
+    "image": "/images/awards/b.png",
+    "badge": "Innovation Finalist"
   },
   {
-    "title": "ICPC Participant",
+    "title": "ICPC Preliminary Contestant",
     "organization": "International Collegiate Programming Contest",
     "year": "2024",
-    "description": "Participated in the ICPC preliminary round, applying problem-solving and algorithmic skills.",
-    "image": "/images/awards/c.jpg"
+    "description": "Participated in the ICPC preliminary round, solving algorithmic challenges under strict time and resource constraints.",
+    "image": "/images/awards/c.jpg",
+    "badge": "Competitive Programming"
   }
 ]
