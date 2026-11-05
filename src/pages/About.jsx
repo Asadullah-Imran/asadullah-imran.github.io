@@ -7,6 +7,8 @@ import {
   FaChalkboardTeacher,
   FaCheck,
   FaCheckCircle,
+  FaChevronDown,
+  FaChevronUp,
   FaCode,
   FaEnvelope,
   FaFlask,
@@ -25,6 +27,7 @@ const About = () => {
   const [experience, setExperience] = useState([]);
   const [achievements, setAchievements] = useState([]);
   const [certifications, setCertifications] = useState([]);
+  const [showFullBio, setShowFullBio] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -127,8 +130,45 @@ const About = () => {
                 {personal.title}
               </h2>
 
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6 text-sm md:text-base text-[#002B48]/85 leading-relaxed space-y-3">
-                <p>{personal.about}</p>
+              {/* Bio Card with Summary & Read More */}
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6 text-sm md:text-base text-[#002B48]/85 leading-relaxed">
+                <p className="leading-relaxed">
+                  {personal.summary ||
+                    "Computer Science & Engineering undergraduate at United International University majoring in Data Science (CGPA 3.97/4.00). My research focuses on deep representation learning for spatial multi-omics cell clustering, bridging artificial intelligence and computational biology."}
+                </p>
+
+                {showFullBio && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="mt-4 pt-4 border-t border-gray-100 space-y-3 text-sm text-[#002B48]/80"
+                  >
+                    {personal.detailedBio ? (
+                      personal.detailedBio.map((paragraph, pIdx) => (
+                        <p key={pIdx} className="leading-relaxed">
+                          {paragraph}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="leading-relaxed">{personal.about}</p>
+                    )}
+                  </motion.div>
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => setShowFullBio(!showFullBio)}
+                  className="mt-3.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#089BAB] hover:text-[#002B48] transition-colors focus:outline-none cursor-pointer"
+                >
+                  <span>{showFullBio ? "Show Less" : "Read Full Background"}</span>
+                  {showFullBio ? (
+                    <FaChevronUp className="text-[10px]" />
+                  ) : (
+                    <FaChevronDown className="text-[10px]" />
+                  )}
+                </button>
               </div>
 
               {/* Quick Info Grid */}

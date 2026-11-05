@@ -11,7 +11,14 @@
   "location": "Dhaka, Bangladesh",
   "email": "asadullahimran19@gmail.com",
   "phone": "+8801633-356249",
+  "summary": "Computer Science & Engineering undergraduate at United International University majoring in Data Science (CGPA 3.97/4.00). My research focuses on deep representation learning for spatial multi-omics cell clustering, bridging artificial intelligence and computational biology to decipher complex cellular systems.",
   "about": "I am a Computer Science and Engineering student at United International University, Bangladesh, with a major in Data Science. My interests lie at the intersection of Artificial Intelligence, Deep Learning, and Computational Biology. I am particularly interested in developing machine learning approaches that can address complex scientific problems and extract meaningful insights from high-dimensional biological data. Currently, I am working on a research project focused on deep learning for spatial multi-omics cell clustering, exploring representation learning and computational approaches for understanding complex cellular environments. Throughout my undergraduate journey, I have maintained a CGPA of 3.97/4.00 and received multiple academic merit scholarships for outstanding academic performance. Beyond coursework, I am continuously developing my research capabilities through experimentation, technical learning, scientific literature, and interdisciplinary exploration. My long-term goal is to pursue graduate research and contribute to the development of AI-driven methods that advance scientific discovery.",
+  "detailedBio": [
+    "I am a Computer Science and Engineering student at United International University, Bangladesh, with a major in Data Science. My interests lie at the intersection of Artificial Intelligence, Deep Learning, and Computational Biology. I am particularly interested in developing machine learning approaches that can address complex scientific problems and extract meaningful insights from high-dimensional biological data.",
+    "Currently, I am working on a research project focused on deep learning for spatial multi-omics cell clustering, exploring representation learning and computational approaches for understanding complex cellular environments.",
+    "Throughout my undergraduate journey, I have maintained a CGPA of 3.97/4.00 and received multiple academic merit scholarships for outstanding academic performance. Beyond coursework, I am continuously developing my research capabilities through experimentation, technical learning, scientific literature, and interdisciplinary exploration.",
+    "My long-term goal is to pursue graduate research and contribute to the development of AI-driven methods that advance scientific discovery."
+  ],
   "image": "/images/profile/b.png",
   "stats": [
     {
